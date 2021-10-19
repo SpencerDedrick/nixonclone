@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/nixonclone/static/css/main.374b3abd.chunk.css",
+    "main.js": "/nixonclone/static/js/main.d9cdeb67.chunk.js",
+    "main.js.map": "/nixonclone/static/js/main.d9cdeb67.chunk.js.map",
+    "runtime-main.js": "/nixonclone/static/js/runtime-main.a9232c2c.js",
+    "runtime-main.js.map": "/nixonclone/static/js/runtime-main.a9232c2c.js.map",
+    "static/js/2.bbda0296.chunk.js": "/nixonclone/static/js/2.bbda0296.chunk.js",
+    "static/js/2.bbda0296.chunk.js.map": "/nixonclone/static/js/2.bbda0296.chunk.js.map",
+    "index.html": "/nixonclone/index.html",
+    "static/css/main.374b3abd.chunk.css.map": "/nixonclone/static/css/main.374b3abd.chunk.css.map",
+    "static/js/2.bbda0296.chunk.js.LICENSE.txt": "/nixonclone/static/js/2.bbda0296.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9232c2c.js",
+    "static/js/2.bbda0296.chunk.js",
+    "static/css/main.374b3abd.chunk.css",
+    "static/js/main.d9cdeb67.chunk.js"
+  ]
+}
