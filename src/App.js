@@ -18,10 +18,18 @@ function App() {
     }
   }
 
+  function closeMenu() {
+    if (menuState === true) {
+      setMenuState(() => false);
+    } else {
+      return;
+    }
+  }
+
   return (
     <div className="App">
       <Router>
-        <Header toggleMenu={toggleMenu} />
+        <Header toggleMenu={toggleMenu} closeMenu={closeMenu} />
         <SlideMenu menuState={menuState} toggleMenu={toggleMenu} />
         <div id="page-wrap">
           <Switch>

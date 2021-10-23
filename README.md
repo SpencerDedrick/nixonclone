@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Spencer Dedrick E-Commerce Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Thanks for READING ME.
 
-## Available Scripts
+This is what will be one of my biggest and most ambitions projects yet. I will be creating a "clone" of the Nixon brand website.
 
-In the project directory, you can run:
+## Table of contents
 
-### `yarn start`
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Overview
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+I've come to realize I've been missing that BIG portfolio project. After doing some reasearch I found that an E-Commerce website incorporates several different skillsets all into one product.
 
-### `yarn test`
+I spent some time researching websites that were user friendly, made what I felt was good use of design, and looked great, but presented some elements that would challenge me and allow me to increase my skill set. I ended up landing on nixon.com as it had what I was looking for.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Below you will find see more about my process, what technologies I used, points of success and failure, and what I learned during the development of this project.
 
-### `yarn build`
+I am currently looking for work as a full-time front-end developer please feel free to reach out to me if you would like to work together.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Best,
+Spencer Dedrick
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Screenshot
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Links
 
-### `yarn eject`
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Source Code URL: [Add live site URL here](https://your-live-site-url.com)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## My process
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+After researching online stores and landing on Nixon I decided to begin researching NPM modules and packages. I'm really starting to realize how powerful NPM is. There are so many different things available that work in really smart ways. I'm sure there is a downside to using so many different packages but I'm sure there is a way to mitigate the impact on performance.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This will be my first project with Styled-Components. I will also be using TailWindCSS.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+I started creating my components in a different way than I usually do. Instead of making a new file/component for each element in the site, I decided to include the functions of smaller components in the same file as the main component. See the example below.
 
-## Learn More
+function HeaderMenu() {
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  <div>example</div>
+}
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+// HEADER CART ICON
+function HeaderCart() {
 
-### Code Splitting
+  <div>example</div>
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+function Header() {
+return (
+<HeaderStyled>
+<HeaderMenu/>
+<HeaderCart />
+</HeaderStyled>
+);
+}
 
-### Analyzing the Bundle Size
+I built the function for the button components directly into the Header.jsx file. I've found this to be beneficial in that I don't have to have several different files open to edit what is essentially a single component. Also, since I am using styled-components, I can also build all the styles right into the same file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Built with
 
-### Making a Progressive Web App
+- HTML, CSS, Javscript
+- Figma
+- Flexbox
+- Grid
+- Mobile first design
+- [React](https://reactjs.org/) - JS library
+- [Create React App](https://create-react-app.dev/) - JS Utility
+- [CRACO](https://github.com/gsoft-inc/craco) - JS Utility
+- [React Router Dom](https://github.com/remix-run/react-router#readme) - React routing utility
+- [Tailwind CSS](https://tailwindcss.com/) - CSS Utility
+- [react-burger-menu](https://github.com/negomi/react-burger-menu) - CSS Utility
+- [react-router-dom](https://github.com/ReactTraining/react-router) - CSS Utility
+- [FontAwesome](https://github.com/FortAwesome/react-fontawesome) - CSS Utility
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### What I learned
 
-### Advanced Configuration
+As I mentioned before this is my first time using styled-compoments in a project. I also decided to use TailwindCSS as it provided some quick and easy styling options.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+I've also learned how to use several NPM packages that I've previously never used. I want to learn and become familiar with the popular and widely used packages so that I can implement them easily when working on other projects within a team.
 
-### Deployment
+Overall this project has been a pleasant experience implementing all that I've learned as well as learning some fun new things along the way.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Continued development
 
-### `yarn build` fails to minify
+This is my most ambitious project yet. I will update as needed, but I'm really hoping this will be the project that propels me into a development position.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Useful resources
+
+- [NPM Trends](https://www.npmtrends.com/) - This site was pretty useful in finding out which NPM packages I should use when choosing between multiple similar packages.
+
+## Author
+
+- Website - [Spencer Dedrick](https://spencerdedrick.com/)
+- LinkedIn - [Spencer Dedrick](https://www.linkedin.com/in/spencer-dedrick/)

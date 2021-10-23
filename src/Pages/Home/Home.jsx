@@ -316,7 +316,7 @@ function HomeSubBar() {
   return (
     <div className="home__sub-bar-container w-screen h-48 text-center flex items-center justify-center flex-col  lg:justify-around my-7">
       <p className="home__sub-bar-text text-white text-xl md:text-4xl font-bold mb-5 ">
-        Become an Insider
+        Become a <Redacted /> Insider
       </p>
       <Button buttonType="white">Get 10% Off</Button>
     </div>
