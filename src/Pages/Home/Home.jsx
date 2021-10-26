@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Button from "../../Components/Button";
 import Redacted from "../../Components/Redacted";
+import HomeProductSlider from "./HomeProductSlider";
 
 //HOME PAGE STYLES
 //MOBILE FIRST
@@ -46,6 +47,9 @@ const HomeStyled = styled.div`
     }
   }
 
+  .home__slider-container {
+    width: 100vw;
+  }
   /* HOME TWO PANEL STYLES */
   .home__two-panel-container {
     .panel-1 {
@@ -328,6 +332,7 @@ function Home() {
     <HomeStyled className="home ">
       <HomeHero />
       <HomeThreePanel />
+      <HomeProductSlider />
       <HomeTwoPanel />
       <HomeInstaBar />
       <HomeTextBar />

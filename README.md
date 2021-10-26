@@ -76,15 +76,17 @@ I built the function for the button components directly into the Header.jsx file
 - [React](https://reactjs.org/) - JS library
 - [Create React App](https://create-react-app.dev/) - JS Utility
 - [CRACO](https://github.com/gsoft-inc/craco) - JS Utility
-- [React Router Dom](https://github.com/remix-run/react-router#readme) - React routing utility
-- [Tailwind CSS](https://tailwindcss.com/) - CSS Utility
+- [TailwindCSS](https://tailwindcss.com/) - CSS Utility
 - [react-burger-menu](https://github.com/negomi/react-burger-menu) - CSS Utility
-- [react-router-dom](https://github.com/ReactTraining/react-router) - CSS Utility
-- [FontAwesome](https://github.com/FortAwesome/react-fontawesome) - CSS Utility
+- [react-router-dom](https://github.com/ReactTraining/react-router) - Routing Utility
+- [FontAwesome](https://github.com/FortAwesome/react-fontawesome) - Icons
+- [react-slick](https://github.com/akiran/react-slick) - carousel component
 
 ### What I learned
 
 As I mentioned before this is my first time using styled-compoments in a project. I also decided to use TailwindCSS as it provided some quick and easy styling options.
+
+I recently read that using TailwindCSS in production is frowned upon. According to some it should only be used for prototyping as to prevent a bloated product. I know TailwindCSS purges on production so I'm not sure how valid these claims are. Also, I need to look into using custom styles more with TailwindCSS.
 
 I've also learned how to use several NPM packages that I've previously never used. I want to learn and become familiar with the popular and widely used packages so that I can implement them easily when working on other projects within a team.
 

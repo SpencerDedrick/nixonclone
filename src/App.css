@@ -25,6 +25,10 @@
   height: auto;
 }
 
+.slick-slide:not(.slick-active) {
+  opacity: 0.5;
+}
+
 /* MOBILE FIRST */
 /* MOBILE AND SMALL STYLES(screen-width <= 768PX) */
 
