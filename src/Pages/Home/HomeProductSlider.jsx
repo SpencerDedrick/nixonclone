@@ -5,7 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronRight,
+  faChevronLeft,
+} from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const products = [
   {
@@ -42,57 +46,156 @@ const products = [
 ];
 
 const ProductSliderStyled = styled.div`
+  overflow-x: hidden;
   width: 300px;
-  max-width: 90vw;
+  max-width: 50vw;
+  height: 100%;
+  margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
   .flair-text {
     width: 100px;
   }
+
+  @media only screen and (min-width: 1024px) {
+  }
 `;
+
+function NextArrow(props) {
+  const { classname, style, onClick } = props;
+  return (
+    <FontAwesomeIcon
+      icon={faChevronLeft}
+      className={classname}
+      style={{
+        ...style,
+
+        cursor: "pointer",
+        position: "absolute",
+        left: 0,
+        top: "40%",
+        color: "white",
+        background: "black",
+        fontSize: "35px",
+        padding: "5px",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+function PrevArrow(props) {
+  const { classname, style, onClick } = props;
+  return (
+    <FontAwesomeIcon
+      icon={faChevronRight}
+      className={classname}
+      style={{
+        ...style,
+        cursor: "pointer",
+        position: "absolute",
+        right: 0,
+        zIndex: "1",
+        top: "40%",
+        color: "white",
+        background: "black",
+        fontSize: "35px",
+        padding: "5px",
+      }}
+      onClick={onClick}
+    />
+  );
+}
 
 export default class CenterMode extends Component {
   render() {
     const settings = {
       className: "center",
-      focusOneSelect: true,
+      focusOnSelect: true,
       centerMode: true,
       infinite: true,
-      centerPadding: "60px",
-      slidesToShow: 1,
+      centerPadding: "90px",
+      slidesToShow: 3,
       speed: 500,
+      nextArrow: <NextArrow />,
+      prevArrow: <PrevArrow />,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            centerPadding: "90px",
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            centerPadding: "50px",
+            slidesToShow: 4,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 640,
+          settings: {
+            centerPadding: "10px",
+            slidesToShow: 3,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 475,
+          settings: {
+            centerPadding: "120px",
+            slidesToShow: 1,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            centerPadding: "90px",
+            slidesToShow: 1,
+            arrows: false,
+          },
+        },
+      ],
     };
     return (
-      <div className="text-center my-10">
-        <div className="my-5">
+      <div className="text-center  lg:px-5 lg:flex lg:flex-row my-10 ">
+        <div className="my-5 lg:w-1/3 lg:grid lg:place-content-center  ">
           <p className="font-bold text-xl">You Might Like</p>
-
-          <p>
+          <Link to="/watches">
             Shop All
             <FontAwesomeIcon className="text-sm mx-2 " icon={faChevronRight} />
-          </p>
+          </Link>
         </div>
-        <Slider {...settings}>
-          {products.map((product) => {
-            return (
-              <ProductSliderStyled>
-                <img
-                  className=" m-auto"
-                  src={product.img}
-                  alt={product.name}
-                ></img>
-                <div className="my-3">
-                  <p className="flair-text text-xs font-medium rounded-full border-black border-2 m-auto my-2">
-                    {product.flair}
-                  </p>
-                  <p className="font-bold text-lg">{product.name}</p>
-                  <p className="text-sm font-light">{product.price}</p>
-                </div>
-              </ProductSliderStyled>
-            );
-          })}
-        </Slider>
+
+        <div className="lg:max-w-full lg:pr-5 lg:my-5 lg:w-2/3 ">
+          <Slider {...settings}>
+            {products.map((product) => {
+              return (
+                <ProductSliderStyled className="home__slider-container lg:h-96 ">
+                  <div className="  lg:grid lg:place-content-center lg:overflow-hidden">
+                    <Link to={`/${product.name}`}>
+                      <img
+                        className="m-auto"
+                        src={product.img}
+                        alt={product.name}
+                      ></img>
+                      <div className="my-3 ">
+                        <p className="flair-text text-xs font-medium rounded-full border-black border-2 m-auto my-2">
+                          {product.flair}
+                        </p>
+                        <p className="font-bold text-lg">{product.name}</p>
+                        <p className="text-sm font-light">{product.price}</p>
+                      </div>
+                    </Link>
+                  </div>
+                </ProductSliderStyled>
+              );
+            })}
+          </Slider>
+        </div>
       </div>
     );
   }

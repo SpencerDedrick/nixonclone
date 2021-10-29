@@ -3,9 +3,49 @@ import Menu from "react-burger-menu/lib/menus/push";
 import HeaderMenuItem from "./HeaderMenuItem";
 import styled from "styled-components";
 
-const SlideMenuStyled = styled.div`
-  padding: 1rem 0.75rem;
-`;
+const navMenuItems = [
+  {
+    text: "Men's Watches",
+    link: "mens-watches",
+    sub: true,
+  },
+  {
+    text: "Women's Watches",
+    link: "womens-watches",
+    sub: true,
+  },
+  {
+    text: "Bags",
+    link: "bags",
+    sub: true,
+  },
+  {
+    text: "Headwear",
+    link: "headwear",
+    sub: true,
+  },
+  {
+    text: "Clothing & Accessories",
+    link: "clothing-and-accessories",
+    sub: true,
+  },
+  {
+    text: "Bands",
+    link: "bands",
+    sub: true,
+  },
+  {
+    text: "Custom",
+    link: "custom",
+    sub: false,
+  },
+  {
+    text: "Gifts",
+    link: "gifts",
+    sub: true,
+  },
+];
+const SlideMenuStyled = styled.div``;
 
 function SlideMenu(props) {
   let showSettings = (event) => {
@@ -19,19 +59,12 @@ function SlideMenu(props) {
         customBurgerIcon={false}
         customCrossIcon={false}
         isOpen={props.menuState}
-        width={"99vw"}
-        className="bg-white"
+        width={"100vw"}
+        className="bg-white m-auto"
       >
-        <HeaderMenuItem text={"Men's Watches"} link={"mens-watches"} />
-        <a id="about" className="menu-item" href="/about">
-          About
-        </a>
-        <a id="contact" className="menu-item" href="/contact">
-          Contact
-        </a>
-        <a onClick={showSettings} className="menu-item--small" href="">
-          Settings
-        </a>
+        {navMenuItems.map((item) => {
+          return <HeaderMenuItem text={item.text} link={item.link} />;
+        })}
       </Menu>
     </SlideMenuStyled>
   );

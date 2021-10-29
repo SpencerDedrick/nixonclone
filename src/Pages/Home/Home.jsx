@@ -4,11 +4,13 @@ import styled from "styled-components";
 import Button from "../../Components/Button";
 import Redacted from "../../Components/Redacted";
 import HomeProductSlider from "./HomeProductSlider";
+import HomeGridGallery from "./HomeGridGallery";
 
 //HOME PAGE STYLES
 //MOBILE FIRST
 //MOBILE AND SMALL STYLES(screen-width <= 768PX)
 const HomeStyled = styled.div`
+  overflow-x: hidden;
   /* HOME HERO STYLES */
   .home__hero-container {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -165,13 +167,13 @@ function HomeThreePanel() {
               </p>
               <div className="flex justify-around w-56 m-auto">
                 <Link
-                  to="mens"
+                  to="mens-watches"
                   className="underline text-white text-sm font-medium"
                 >
                   Shop Men's
                 </Link>
                 <Link
-                  to="womens"
+                  to="womens-watches"
                   className="underline text-white text-sm font-medium"
                 >
                   Shop Women's
@@ -294,8 +296,8 @@ function HomeInstaBar() {
 
 function HomeTextBar() {
   return (
-    <div className="container home__text-bar m-auto px- max-w-7xl">
-      <p className="leading-7 text-center px-3 my-7 lg:text-left">
+    <div className="container home__text-bar m-auto max-w-7xl mb-16">
+      <p className="leading-7 text-center px-3 my-7 font-light text-sm">
         <Redacted />
         is the go-to accessories shop for premium watches and much more. With a
         wide range of quality watches, apparel,{" "}

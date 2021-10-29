@@ -46,13 +46,13 @@ I started creating my components in a different way than I usually do. Instead o
 
 function HeaderMenu() {
 
-  <div>example</div>
+  <div>this would be the nav menu</div>
 }
 
 // HEADER CART ICON
 function HeaderCart() {
 
-  <div>example</div>
+  <div>this would be the menu button including it's functional code</div>
 }
 
 function Header() {
@@ -64,7 +64,7 @@ return (
 );
 }
 
-I built the function for the button components directly into the Header.jsx file. I've found this to be beneficial in that I don't have to have several different files open to edit what is essentially a single component. Also, since I am using styled-components, I can also build all the styles right into the same file.
+I built the function for the button components directly into the Header.jsx file. I've found this to be beneficial in that I don't have to have several different files open to edit what is essentially a single component. It has been less confusing when dealing with multiple components on a single page, especially when those components don't need to be reusable and will only exist on that one page or within that one larger component. Also, since I am using styled-components, I can also build all the styles right into the same file.
 
 ### Built with
 
@@ -81,6 +81,7 @@ I built the function for the button components directly into the Header.jsx file
 - [react-router-dom](https://github.com/ReactTraining/react-router) - Routing Utility
 - [FontAwesome](https://github.com/FortAwesome/react-fontawesome) - Icons
 - [react-slick](https://github.com/akiran/react-slick) - carousel component
+- [react-grid-gallery](https://github.com/akiran/react-slick) - image gallery component in a grid layout
 
 ### What I learned
 

@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  faShoppingCart,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -11,7 +8,7 @@ const HeaderStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 0.75rem;
+  padding: 1rem 0.75rem;
 
   /* MENU BUTTON STYLES */
   .menu-btn {
@@ -20,6 +17,7 @@ const HeaderStyled = styled.div`
     align-items: center;
 
     cursor: pointer;
+    height: 30px;
     transition: all 0.5s ease-in-out;
 
     .menu-btn__burger {
@@ -86,13 +84,15 @@ function toggleMenuButton() {
 function HeaderMenu(props) {
   return (
     <div
-      id="header__menu-button"
-      className="flex-col flex justify-between h-full items-center cursor-pointer menu-btn"
+      className="cursor-pointer "
       onClick={() => handleMenuButtonClick(props)}
     >
-      <div className="menu-btn__burger"></div>
-      {/* <FontAwesomeIcon icon={faBars} className="text-2xl" /> */}
-      {/* s */}
+      <div
+        id="header__menu-button"
+        className="flex-col flex justify-between h-full items-center cursor-pointer menu-btn"
+      >
+        <div className="menu-btn__burger "></div>
+      </div>
     </div>
   );
 }
@@ -101,9 +101,9 @@ function HeaderMenu(props) {
 function HeaderCart(props) {
   return (
     // props.props????? There must be a better way to handle this
-    <div onClick={() => handleOffMenuClick(props.props)}>
+    <Link to="/cart" onClick={() => handleOffMenuClick(props.props)}>
       <FontAwesomeIcon icon={faShoppingCart} className="text-2xl" />
-    </div>
+    </Link>
   );
 }
 
@@ -113,7 +113,7 @@ function Header(props) {
       <HeaderMenu toggleMenu={props.toggleMenu} />
       <Link
         to="/"
-        className="text-3xl font-black"
+        className="text-2xl font-black"
         onClick={() => handleOffMenuClick(props)}
       >
         HOME
