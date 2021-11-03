@@ -14,7 +14,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   const [menuState, setMenuState] = useState(false);
-  const [cartState, setCartState] = useState([]);
+  /* const [cartState, setCartState] = useState([]); */
 
   function toggleMenu() {
     setMenuState((state) => !state);
@@ -53,6 +53,18 @@ function App() {
             </Route>
             <Route path="/regulator">
               <ProductPage product={products.Regulator} />
+            </Route>
+            <Route path="/smoke">
+              <ProductPage product={products.Smoke} />
+            </Route>
+            <Route path="/corporate">
+              <ProductPage product={products.Corporate} />
+            </Route>
+            <Route path="/kingston">
+              <ProductPage product={products.Kingston} />
+            </Route>
+            <Route path="/chronus">
+              <ProductPage product={products.Chronus} />
             </Route>
           </Switch>
           <Footer />

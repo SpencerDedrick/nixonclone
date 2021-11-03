@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Button from "../../Components/Button";
 import Redacted from "../../Components/Redacted";
 import HomeProductSlider from "./HomeProductSlider";
-import HomeGridGallery from "./HomeGridGallery";
 
 //HOME PAGE STYLES
 //MOBILE FIRST

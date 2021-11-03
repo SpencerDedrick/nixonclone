@@ -48,10 +48,6 @@ const navMenuItems = [
 const SlideMenuStyled = styled.div``;
 
 function SlideMenu(props) {
-  let showSettings = (event) => {
-    event.preventDefault();
-  };
-
   return (
     <SlideMenuStyled>
       <Menu

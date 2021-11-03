@@ -18,10 +18,11 @@ const products = {
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw97d8c471/products/A083-502-seeiton.jpg?sw=556&sh=680&sm=fit&sfrm=png",
     ],
   },
-  "50-31 Chronus": {
+  Chronus: {
     name: "50-31 Chronus",
     model: "A083-502-00",
     price: 500,
+    caseMeasurements: "51 mm",
     description:
       "Heavy Hitter. Nothing else quite measures up. Named after the face size (51mm) and water-resistant rating (30 ATM), the 51-30 Chrono is the OG oversized watch that birthed a whole style movement. It's the ultimate statement piece, but its pro-level chronograph and waterman functionality makes it so much more than a pretty face.",
     design:
@@ -40,10 +41,11 @@ const products = {
       "51 mm, 300 meter/30 ATM custom solid stainless steel, solid stainless steel or handmade acetate unidirectional rotating bezel with countdown timer, hardened mineral crystal, screw down crown and pushers, stainless steel screw down caseback and screw pin lugs.",
     warranty:
       "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
-    image: "sample.png",
+    image:
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwd5d23b21/products/A083-502-view1.png?sw=300&sh=330&sm=fit",
     size: "OSFM",
     flair: "Best Sller",
-    category: "Men's Watch",
+    category: "Men's Watches",
     photos: [
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw7ec43faa/products/A083-502-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwc7426303/products/A083-502-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
@@ -81,7 +83,7 @@ const products = {
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw441f4215/products/A1180-001-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
     size: "OSFM",
     flair: "Best Sller",
-    category: "Men's Watch",
+    category: "Men's Watches",
     photos: [
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwe42247ad/products/A1180-001-view2.jpg?sfrm=png",
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwd3d1612f/products/A1180-001-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
@@ -93,6 +95,7 @@ const products = {
   Corporate: {
     name: "Corporate",
     model: "A346-001-00",
+    caseMeasurements: "48 mm",
     price: 225,
     description:
       "Strength With Numbers. The field watch with a clear, tactical advantage. The face is protected by a recessed crystal and the oversized bezel brings out the best in rugged durability. Its functional design combined with details like faceted links that look like a mountain range when viewed from the side means the Corporal always has the high ground.",
@@ -115,7 +118,7 @@ const products = {
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw4c17d923/products/A346-001-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
     size: "OSFM",
     flair: "Best Sller",
-    category: "Men's Watch",
+    category: "Men's Watches",
     photos: [
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwe28cd745/products/A346-001-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw6857d058/products/A346-001-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
@@ -127,6 +130,7 @@ const products = {
   Kingston: {
     name: "Kingston",
     model: "A099-3005-00",
+    caseMeasurements: "37 mm",
     price: 175,
     description:
       "Hello, Gorgeous. Comfortable in any setting, the Kensington adds an air of elegance to every ensemble. Striking dial details gives this timeless style just the right amount of intrigue.",
@@ -150,7 +154,7 @@ const products = {
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwd26c1405/products/A099-3005-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
     size: "OSFM",
     flair: "Personalize",
-    category: "Womens's Watch",
+    category: "Women's Watches",
     photos: [
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw429dfc52/products/A099-3005-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw8a92ba1b/products/A099-3005-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
@@ -162,6 +166,7 @@ const products = {
   Smoke: {
     name: "Smoke",
     model: "A1320-001-00",
+    caseMeasurements: "38 mm",
     price: 150,
     description:
       "A slim superstar with a singular goal: make a low-profile watch for timed sports that can stand up to the most punishing conditions. This favorite training tool of two-time world champion surfer John John Florence features multiple timer options, a rugged but thin 8mm case design, and a sporty, breathable strap. From sets in the gym or the water, laps in the pool or the track, the Heat is on.",
@@ -185,7 +190,7 @@ const products = {
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw7c0ee826/products/A1320-001-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
     size: "OSFM",
     flair: "New",
-    category: "Womens's Watch",
+    category: "Men's Watches",
     photos: [
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw771a166d/products/A1320-001-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw8dd52573/products/A1320-001-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",

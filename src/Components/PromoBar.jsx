@@ -24,6 +24,7 @@ const StyledPromoBar = styled.div`
   background: black;
   max-height: 7vh;
   width: 100vw;
+  max-width: 100vw;
   height: 65px;
   text-align: center;
   display: grid;

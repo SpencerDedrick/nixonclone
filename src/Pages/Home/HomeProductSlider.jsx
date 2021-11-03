@@ -38,7 +38,7 @@ const products = [
     flair: "Best Seller",
   },
   {
-    name: "50-31 Chronus",
+    name: "Chronus",
     img: "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwd5d23b21/products/A083-502-view1.png?sw=300&sh=330&sm=fit",
     price: "$500.00",
     flair: "Best Seller",
