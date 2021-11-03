@@ -59,7 +59,13 @@ function SlideMenu(props) {
         className="bg-white m-auto"
       >
         {navMenuItems.map((item) => {
-          return <HeaderMenuItem text={item.text} link={item.link} />;
+          return (
+            <HeaderMenuItem
+              toggleMenu={props.toggleMenu}
+              text={item.text}
+              link={item.link}
+            />
+          );
         })}
       </Menu>
     </SlideMenuStyled>

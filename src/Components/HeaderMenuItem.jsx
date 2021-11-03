@@ -12,7 +12,9 @@ const HeaderMenuItemStyled = styled.div`
 function HeaderMenuItem(props) {
   return (
     <HeaderMenuItemStyled className=" px-5 text-sm font-semi-bold max-w-full py-3 max-w-screen flex justify-between items-center">
-      <Link to={props.link}>{props.text}</Link>
+      <Link to={props.link} onClick={() => props.toggleMenu()}>
+        {props.text}
+      </Link>
       <FontAwesomeIcon icon={faChevronRight} />
     </HeaderMenuItemStyled>
   );
