@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/nixonclone/home/static/css/main.5d5f50b3.chunk.css",
-    "main.js": "/nixonclone/home/static/js/main.1fd36900.chunk.js",
-    "main.js.map": "/nixonclone/home/static/js/main.1fd36900.chunk.js.map",
-    "runtime-main.js": "/nixonclone/home/static/js/runtime-main.46ca7582.js",
-    "runtime-main.js.map": "/nixonclone/home/static/js/runtime-main.46ca7582.js.map",
-    "static/css/2.b6fc9b8b.chunk.css": "/nixonclone/home/static/css/2.b6fc9b8b.chunk.css",
-    "static/js/2.b3c81dca.chunk.js": "/nixonclone/home/static/js/2.b3c81dca.chunk.js",
-    "static/js/2.b3c81dca.chunk.js.map": "/nixonclone/home/static/js/2.b3c81dca.chunk.js.map",
-    "index.html": "/nixonclone/home/index.html",
-    "static/css/2.b6fc9b8b.chunk.css.map": "/nixonclone/home/static/css/2.b6fc9b8b.chunk.css.map",
-    "static/css/main.5d5f50b3.chunk.css.map": "/nixonclone/home/static/css/main.5d5f50b3.chunk.css.map",
-    "static/js/2.b3c81dca.chunk.js.LICENSE.txt": "/nixonclone/home/static/js/2.b3c81dca.chunk.js.LICENSE.txt",
-    "static/media/slick-theme.css": "/nixonclone/home/static/media/slick.c94f7671.ttf"
+    "main.css": "/nixonclone/static/css/main.5d5f50b3.chunk.css",
+    "main.js": "/nixonclone/static/js/main.1fd36900.chunk.js",
+    "main.js.map": "/nixonclone/static/js/main.1fd36900.chunk.js.map",
+    "runtime-main.js": "/nixonclone/static/js/runtime-main.a9232c2c.js",
+    "runtime-main.js.map": "/nixonclone/static/js/runtime-main.a9232c2c.js.map",
+    "static/css/2.380b4898.chunk.css": "/nixonclone/static/css/2.380b4898.chunk.css",
+    "static/js/2.03990d37.chunk.js": "/nixonclone/static/js/2.03990d37.chunk.js",
+    "static/js/2.03990d37.chunk.js.map": "/nixonclone/static/js/2.03990d37.chunk.js.map",
+    "index.html": "/nixonclone/index.html",
+    "static/css/2.380b4898.chunk.css.map": "/nixonclone/static/css/2.380b4898.chunk.css.map",
+    "static/css/main.5d5f50b3.chunk.css.map": "/nixonclone/static/css/main.5d5f50b3.chunk.css.map",
+    "static/js/2.03990d37.chunk.js.LICENSE.txt": "/nixonclone/static/js/2.03990d37.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/nixonclone/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.46ca7582.js",
-    "static/css/2.b6fc9b8b.chunk.css",
-    "static/js/2.b3c81dca.chunk.js",
+    "static/js/runtime-main.a9232c2c.js",
+    "static/css/2.380b4898.chunk.css",
+    "static/js/2.03990d37.chunk.js",
     "static/css/main.5d5f50b3.chunk.css",
     "static/js/main.1fd36900.chunk.js"
   ]
