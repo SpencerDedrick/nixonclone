@@ -5,7 +5,7 @@ import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import SlideMenu from "./Components/SlideMenu";
-import PromoBar from "./Components/PromoBar";
+/* import PromoBar from "./Components/PromoBar"; */
 import Cart from "./Pages/Cart/Cart";
 import products from "./Constants/Products";
 import ProductPage from "./Pages/Product/ProductPage";
@@ -37,7 +37,7 @@ function App() {
     <div className="App">
       <Router>
         <ScrollToTop />
-        <PromoBar />
+        {/*   <PromoBar /> */}
         <Header toggleMenu={toggleMenu} closeMenu={closeMenu} />
         <SlideMenu menuState={menuState} toggleMenu={toggleMenu} />
         <div id="page-wrap">

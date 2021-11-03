@@ -96,6 +96,7 @@ const settings = {
   slidesToScroll: 1,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
+  variableWidth: true,
 };
 
 function PromoBar() {
