@@ -1,5 +1,6 @@
 import React from "react";
-import Menu from "react-burger-menu/lib/menus/push";
+import PushMenu from "react-burger-menu/lib/menus/push";
+
 import HeaderMenuItem from "./HeaderMenuItem";
 import styled from "styled-components";
 
@@ -45,18 +46,18 @@ const navMenuItems = [
     sub: true,
   },
 ];
-const SlideMenuStyled = styled.div``;
+const PushMenuStyled = styled.div``;
 
-function SlideMenu(props) {
+function PushMenuNav(props) {
   return (
-    <SlideMenuStyled>
-      <Menu
+    <PushMenuStyled>
+      <PushMenu
         pageWrapId={"page-wrap"}
         customBurgerIcon={false}
         customCrossIcon={false}
         isOpen={props.menuState}
         width={"100vw"}
-        className="bg-white m-auto"
+        className="bg-white m-auto "
       >
         {navMenuItems.map((item) => {
           return (
@@ -67,9 +68,9 @@ function SlideMenu(props) {
             />
           );
         })}
-      </Menu>
-    </SlideMenuStyled>
+      </PushMenu>
+    </PushMenuStyled>
   );
 }
 
-export default SlideMenu;
+export default PushMenuNav;

@@ -110,7 +110,7 @@ function ProductPageFeatures(props) {
             </div>
           </div>
           <img
-            className="w-screen md:h-full second-image"
+            className="hidden md:block w-screen md:h-full second-image"
             src={product.photos[3]}
             alt={product.name}
           />
@@ -186,7 +186,12 @@ function ProductPageCollapse(props) {
 }
 
 function ProductPageDetailsMobile(props) {
-  let { product } = props;
+  let { product, addToCart } = props;
+
+  function handleClick(product) {
+    addToCart(product);
+  }
+
   return (
     <div className="product-page__details-container md:hidden">
       <div className="flex w-1/2 justify-between align-middle py-2">
@@ -218,22 +223,26 @@ function ProductPageDetailsMobile(props) {
       <p className="m-auto text-center my-5 text-sm font-semibold">
         <FontAwesomeIcon icon={faTruck} /> Free Shipping + Returns
       </p>
-      <div className="text-center my-5">
+      <div className="text-center my-5" onClick={() => handleClick(product)}>
         <Button type="black">Add to Cart</Button>
       </div>
       <hr className="my-5" />
       <p className="text-sm tracking-wide leading-relaxed  py-3">
         {product.description}
       </p>
-      <img className="w-screen" src={product.photos[3]} alt={product.name} />
+      <img
+        className="w-screen md:hidden"
+        src={product.photos[3]}
+        alt={product.name}
+      />
     </div>
   );
 }
 function ProductPageDetailsDesktop(props) {
-  let { product } = props;
+  let { product, addToCart } = props;
   return (
-    <div className="bg-white mb-24 pb-20">
-      <div className="product-page__details-container sm:hidden md:flex md: justify-space-between md:max-w-6xl pt-10 md:m-auto">
+    <div className="bg-white mb-24 pb-20 hidden md:block">
+      <div className="product-page__details-container  md:flex md: justify-space-between md:max-w-6xl pt-10 md:m-auto">
         <div>
           <div className="flex w-1/2 justify-between align-middle py-2">
             <p className="font-medium text-sm">{product.caseMeasurements}</p>
@@ -275,7 +284,9 @@ function ProductPageDetailsDesktop(props) {
             <FontAwesomeIcon icon={faTruck} /> Free Shipping + Returns
           </p>
           <div className="text-center my-5">
-            <Button type="black">Add to Cart</Button>
+            <Button type="black" onClickHandler={addToCart}>
+              Add to Cart
+            </Button>
           </div>
         </div>
       </div>
@@ -284,12 +295,12 @@ function ProductPageDetailsDesktop(props) {
 }
 
 function ProductPage(props) {
-  let { product } = props;
+  let { product, addToCart } = props;
 
   return (
-    <StyledProductPage className=" w-screen bg-gray-100">
+    <StyledProductPage className=" w-screen px-2 md:px-0 md:bg-gray-100">
       <ProductPageBreadCrumbs product={product} />
-      <ProductPageDetailsMobile product={product} />
+      <ProductPageDetailsMobile product={product} addToCart={addToCart} />
       <ProductPageDetailsDesktop product={product} />
       <ProductPageFeatures product={product} />
       <ProductPageCollapse product={product} />

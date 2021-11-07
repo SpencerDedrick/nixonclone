@@ -1,28 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Route, Switch, HashRouter } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
-import SlideMenu from "./Components/SlideMenu";
+import PushMenuNav from "./Components/PushMenuNav";
 /* import PromoBar from "./Components/PromoBar"; */
 import Cart from "./Pages/Cart/Cart";
 import products from "./Constants/Products";
 import ProductPage from "./Pages/Product/ProductPage";
+import Button from "./Components/Button";
 
 import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   const [menuState, setMenuState] = useState(false);
-  /* const [cartState, setCartState] = useState([]); */
+  const [cartState, setCartState] = useState([]);
+
+  function addToCart(product) {
+    setCartState((cartState) => [...cartState, product]);
+  }
+
+  function removeFromCart(product) {
+    setCartState((cartState) => cartState.filter((item) => item !== product));
+  }
+
+  useEffect(() => {
+    console.log(cartState);
+  }, [cartState]);
+
+  /*   const removeFromCart = (product) => {
+    setCartState(cartState.filter((item) => item.id !== product.id));
+  }; */
 
   function toggleMenu() {
     setMenuState((state) => !state);
-    if (menuState === true) {
-      console.log("menu is open");
-    } else {
-      console.log("menu is closed");
-    }
   }
 
   function closeMenu() {
@@ -39,7 +51,7 @@ function App() {
         <ScrollToTop />
         {/*   <PromoBar /> */}
         <Header toggleMenu={toggleMenu} closeMenu={closeMenu} />
-        <SlideMenu menuState={menuState} toggleMenu={toggleMenu} />
+        <PushMenuNav menuState={menuState} toggleMenu={toggleMenu} />
         <div id="page-wrap">
           <Switch>
             <Route exact path="/">
@@ -49,22 +61,22 @@ function App() {
               <h1>About Us</h1>
             </Route>
             <Route path="/Cart">
-              <Cart />
+              <Cart cartState={cartState} removeFromCart={removeFromCart} />
             </Route>
             <Route path="/regulator">
-              <ProductPage product={products.Regulator} />
+              <ProductPage product={products.Regulator} addToCart={addToCart} />
             </Route>
             <Route path="/smoke">
-              <ProductPage product={products.Smoke} />
+              <ProductPage product={products.Smoke} addToCart={addToCart} />
             </Route>
             <Route path="/corporate">
-              <ProductPage product={products.Corporate} />
+              <ProductPage product={products.Corporate} addToCart={addToCart} />
             </Route>
             <Route path="/kingston">
-              <ProductPage product={products.Kingston} />
+              <ProductPage product={products.Kingston} addToCart={addToCart} />
             </Route>
             <Route path="/chronus">
-              <ProductPage product={products.Chronus} />
+              <ProductPage product={products.Chronus} addToCart={addToCart} />
             </Route>
           </Switch>
           <Footer />

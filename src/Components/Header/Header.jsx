@@ -81,10 +81,10 @@ function toggleMenuButton() {
 }
 
 // HEADER MENU BUTTON
-function HeaderMenu(props) {
+function HeaderMenuButton(props) {
   return (
     <div
-      className="cursor-pointer "
+      className="cursor-pointer md:hidden "
       onClick={() => handleMenuButtonClick(props)}
     >
       <div
@@ -110,7 +110,7 @@ function HeaderCart(props) {
 function Header(props) {
   return (
     <HeaderStyled>
-      <HeaderMenu toggleMenu={props.toggleMenu} />
+      <HeaderMenuButton toggleMenu={props.toggleMenu} />
       <Link
         to="/"
         className="text-2xl font-black"
