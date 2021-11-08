@@ -12,7 +12,7 @@ import {
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import HomeProductSlider from "../../Pages/Home/HomeProductSlider";
+import HomeProductSlider from "../Home/HomeProductSlider";
 
 let Panel = Collapse.Panel;
 
@@ -35,6 +35,11 @@ const StyledProductPage = styled.div`
 
   .desktop-detail-text {
     max-width: 45ch;
+  }
+
+  .mobile-image {
+    max-width: 70vw;
+    margin: auto;
   }
 `;
 
@@ -116,6 +121,11 @@ function ProductPageFeatures(props) {
           />
         </div>
       </div>
+      <img
+        className="w-screen md:hidden"
+        src={product.photos[4]}
+        alt={product.name}
+      />
     </div>
   );
 }
@@ -123,7 +133,7 @@ function ProductPageFeatures(props) {
 function ProductPageCollapse(props) {
   let { product } = props;
   return (
-    <div className="md:bg-white md:w-screen py-20">
+    <div className="md:bg-white md:w-screen pt-10">
       <Collapse
         className="product-page__full-specs-container md:max-w-6xl md:m-auto"
         expandIcon={<FontAwesomeIcon icon={faPlus} />}
@@ -216,10 +226,21 @@ function ProductPageDetailsMobile(props) {
         </span>
       </p>
       <img
-        className=" px-3 w-11/12 mb-10"
+        className=" px-3 w-11/12 mb-10 mobile-image"
         src={product.image}
         alt={product.name}
       />
+      <div className="flex py-2 ">
+        {product.photos.map((photo, index) => {
+          return (
+            <img
+              src={product.photos[index]}
+              alt={product.name}
+              className="w-1/5 px-2"
+            />
+          );
+        })}
+      </div>
       <p className="m-auto text-center my-5 text-sm font-semibold">
         <FontAwesomeIcon icon={faTruck} /> Free Shipping + Returns
       </p>
@@ -240,12 +261,17 @@ function ProductPageDetailsMobile(props) {
 }
 function ProductPageDetailsDesktop(props) {
   let { product, addToCart } = props;
+
+  function handleClick(product) {
+    addToCart(product);
+  }
   return (
     <div className="bg-white mb-24 pb-20 hidden md:block">
       <div className="product-page__details-container  md:flex md: justify-space-between md:max-w-6xl pt-10 md:m-auto">
         <div>
           <div className="flex w-1/2 justify-between align-middle py-2">
             <p className="font-medium text-sm">{product.caseMeasurements}</p>
+
             <p className="text-xs font-medium rounded-full border-black border-2 m-auto px-3">
               {product.flair}
             </p>
@@ -268,12 +294,23 @@ function ProductPageDetailsDesktop(props) {
           alt={product.name}
         />
         <div className="flex flex-col start ">
+          <div className="flex">
+            {product.photos.map((photo, index) => {
+              return (
+                <img
+                  src={product.photos[index]}
+                  alt={product.name}
+                  className="w-20 px-2"
+                />
+              );
+            })}
+          </div>
           <p className="font-medium text-xl text-center">
             ${product.price}.00{" "}
           </p>
           <p className="font-medium text-xs py-2 ">
             <span className="font-medium text-gray-500">
-              or 4 installments of $ {product.price / 4} with{" "}
+              or 4 installments of $ {product.price / 4} with
             </span>
             {/* make info icon a popup with modal */}
             <span className="font-bold">
@@ -284,7 +321,7 @@ function ProductPageDetailsDesktop(props) {
             <FontAwesomeIcon icon={faTruck} /> Free Shipping + Returns
           </p>
           <div className="text-center my-5">
-            <Button type="black" onClickHandler={addToCart}>
+            <Button type="black" onClick={() => handleClick(product)}>
               Add to Cart
             </Button>
           </div>

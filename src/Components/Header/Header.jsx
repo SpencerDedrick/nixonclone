@@ -9,6 +9,7 @@ const HeaderStyled = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0.75rem;
+  width: 100vw;
 
   /* MENU BUTTON STYLES */
   .menu-btn {

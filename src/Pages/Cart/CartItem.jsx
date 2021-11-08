@@ -11,9 +11,11 @@ function CartItem(props) {
   let { product, removeFromCart } = props;
   return (
     <CartItemStyled className="py-5">
-      <img className="h-40" src={product.image} alt="nixon watch"></img>
+      <img className="h-40" src={product.image} alt={product.name}></img>
       <div className="text-left ml-5">
-        <p className="font-bold">{product.name} </p>
+        <p className="font-bold">
+          {product.name} {product.type}
+        </p>
         <p className="font-light text-sm py-1">{product.model}</p>
         <p className="pt-1 text-sm font-medium">{product.color}</p>
         <p className="text-sm font-medium">{product.size}</p>

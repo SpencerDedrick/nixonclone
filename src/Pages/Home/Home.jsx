@@ -245,7 +245,7 @@ function HomeTwoPanel() {
                   Shop Men's
                 </Link>
                 <Link
-                  to="womens"
+                  to="womens-watches"
                   className="underline text-white text-sm font-medium"
                 >
                   Shop Women's
@@ -257,7 +257,7 @@ function HomeTwoPanel() {
       </div>
       <div className=" hidden sm:block sm:w-20"></div>
       <div className="home__square-container my-2">
-        <Link to="womens">
+        <Link to="womens-watches">
           <div className="panel-2">
             <div className="absolute bottom-5 left-0 right-0">
               <p className="text-white text-center text-lg font-semibold">
@@ -265,7 +265,7 @@ function HomeTwoPanel() {
               </p>
               <div className="flex justify-around m-auto">
                 <Link
-                  to="womens"
+                  to="womens-watches"
                   className="underline text-white text-sm font-medium"
                 >
                   Shop Now

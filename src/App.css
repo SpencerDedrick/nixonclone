@@ -23,6 +23,7 @@
 
 .App {
   height: auto;
+  width: 100vw;
 }
 
 .slick-slide:not(.slick-active) {

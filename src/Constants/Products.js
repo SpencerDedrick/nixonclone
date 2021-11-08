@@ -1,28 +1,12 @@
 const products = {
-  sample: {
-    name: "Sample",
-    model: "A1234-123-12",
-    price: "$240.00",
-    description: "Sample product",
-    image:
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwd5d23b21/products/A083-502-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-    size: "OSFM",
-    flair: "Sample",
-    category: "Men's Watch",
-    color: "black",
-    photos: [
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw7ec43faa/products/A083-502-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwc7426303/products/A083-502-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwdf548e82/products/A083-502-view5.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwa2104ac8/products/A083-502-life_1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw97d8c471/products/A083-502-seeiton.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-    ],
-  },
+  //Men's Watches
   Chronus: {
-    name: "50-31 Chronus",
+    name: "Chronus",
     model: "A083-502-00",
     price: 500,
     caseMeasurements: "51 mm",
+    type: "Watch",
+    color: "All Gold",
     description:
       "Heavy Hitter. Nothing else quite measures up. Named after the face size (51mm) and water-resistant rating (30 ATM), the 51-30 Chrono is the OG oversized watch that birthed a whole style movement. It's the ultimate statement piece, but its pro-level chronograph and waterman functionality makes it so much more than a pretty face.",
     design:
@@ -42,10 +26,10 @@ const products = {
     warranty:
       "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
     image:
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwd5d23b21/products/A083-502-view1.png?sw=300&sh=330&sm=fit",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwd5d23b21/products/A083-502-view1.jpg?sw=980&sh=1200&sm=fit&sfrm=png",
     size: "OSFM",
-    flair: "Best Sller",
-    category: "Men's Watches",
+    flair: "Best Seller",
+    category: "mens-watches",
     photos: [
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw7ec43faa/products/A083-502-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwc7426303/products/A083-502-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
@@ -58,8 +42,8 @@ const products = {
     name: "Regulator",
     model: "A1180-001-00",
     caseMeasurements: "46 mm",
-    type: "watch",
-    color: "Black / Positive",
+    type: "Watch",
+    color: "All Black",
     price: 175,
     description:
       "Ready for Anything. Introducing the Regulus, a high-performance watch created in collaboration with agents from the Special Operations corps of the United States. Manufactured to withstand the most extreme conditions and with a simple design, the Regulus is always ready for action.",
@@ -82,8 +66,8 @@ const products = {
     image:
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw441f4215/products/A1180-001-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
     size: "OSFM",
-    flair: "Best Sller",
-    category: "Men's Watches",
+    flair: "Best Seller",
+    category: "mens-watches",
     photos: [
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwe42247ad/products/A1180-001-view2.jpg?sfrm=png",
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwd3d1612f/products/A1180-001-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
@@ -96,6 +80,8 @@ const products = {
     name: "Corporate",
     model: "A346-001-00",
     caseMeasurements: "48 mm",
+    type: "Watch",
+    color: "All Black",
     price: 225,
     description:
       "Strength With Numbers. The field watch with a clear, tactical advantage. The face is protected by a recessed crystal and the oversized bezel brings out the best in rugged durability. Its functional design combined with details like faceted links that look like a mountain range when viewed from the side means the Corporal always has the high ground.",
@@ -117,8 +103,8 @@ const products = {
     image:
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw4c17d923/products/A346-001-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
     size: "OSFM",
-    flair: "Best Sller",
-    category: "Men's Watches",
+    flair: "Best Seller",
+    category: "mens-watches",
     photos: [
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwe28cd745/products/A346-001-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw6857d058/products/A346-001-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
@@ -127,45 +113,11 @@ const products = {
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw2500e188/products/A346-001-seeiton.jpg?sw=556&sh=680&sm=fit&sfrm=png",
     ],
   },
-  Kingston: {
-    name: "Kingston",
-    model: "A099-3005-00",
-    caseMeasurements: "37 mm",
-    price: 175,
-    description:
-      "Hello, Gorgeous. Comfortable in any setting, the Kensington adds an air of elegance to every ensemble. Striking dial details gives this timeless style just the right amount of intrigue.",
-    design:
-      "The little black dress of timepieces, this is one that everybody should have in their rotation. Its classic case and band shape get complimented by contemporary colors and material accents.",
-    durability:
-      "The solid stainless steel case and hardened mineral crystal help protect against the perils of everyday wear.",
-    specialFeature:
-      "Engraved and printed indices give the dial detail and depth.",
-    movement: "Miyota Japanese quartz 3 hand.",
-    waterRating: "50 Meter / 5 ATM",
-    watchBand:
-      "16 mm custom solid stainless steel bracelet with a stainless steel locking clasp.",
-    watchDial:
-      "This dial includes engraved and printed indices and custom molded hands.",
-    watchCase:
-      "37 mm, 50 meter/5 ATM solid stainless steel case with a hardened mineral crystal, stainless steel snap fit caseback and spring pin lugs.",
-    warranty:
-      "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
-    image:
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwd26c1405/products/A099-3005-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-    size: "OSFM",
-    flair: "Personalize",
-    category: "Women's Watches",
-    photos: [
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw429dfc52/products/A099-3005-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw8a92ba1b/products/A099-3005-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw37b448f7/products/A099-3005-view5.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw6dadaf0d/products/A099-3005-life_1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw76154c5e/products/A099-3005-seeiton.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-    ],
-  },
   Smoke: {
     name: "Smoke",
     model: "A1320-001-00",
+    type: "Watch",
+    color: "All Black",
     caseMeasurements: "38 mm",
     price: 150,
     description:
@@ -190,7 +142,7 @@ const products = {
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw7c0ee826/products/A1320-001-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
     size: "OSFM",
     flair: "New",
-    category: "Men's Watches",
+    category: "mens-watches",
     photos: [
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw771a166d/products/A1320-001-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw8dd52573/products/A1320-001-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
@@ -199,6 +151,201 @@ const products = {
       "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwfec6b751/products/A1320-001-seeiton.jpg?sw=556&sh=680&sm=fit&sfrm=png",
     ],
   },
+  Patrol: {
+    name: "Patrol",
+    model: "A1243-595-00",
+    type: "Watch",
+    color: "Gunmetal / Gold",
+    caseMeasurements: "42 mm",
+    price: 175,
+    description:
+      "Field Goals. The Patrol is for those who are on time, all the time. 24-hour indices on the inner bezel surround pronounced numerical markers on the face. It's got a slim profile paired with a genuine leather band that's a modern take on a classic field watch. ",
+    design:
+      "The 42mm case is an oversized, yet functional, modern take on an heirloom look. Applied indices and custom-molded hands create depth and interest on the face.",
+    durability:
+      "Features surf-standard 100m waterproof rating, custom, solid stainless steel case, custom leather band and hardened mineral crystal.",
+    specialFeature:
+      "24-hour markers line the inner bezel for easy access to military time.",
+    movement:
+      "Miyota Japanese quartz 3 hand movement and crown placement at 3 o’clock.",
+    waterRating: "100 METER / 10 ATM",
+    watchBand: "21mm genuine leather strap with stainless steel buckle. ",
+    watchDial:
+      "The dial features applied indices, dial ring with printed seconds track, and custom molded hands. ",
+    watchCase:
+      " 42mm, 100 meter/10 ATM, custom solid stainless steel case, hardened mineral crystal, stainless steel screw down caseback and spring pin lugs. ",
+    warranty:
+      "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
+    image:
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwef9852a6/products/A1243-595-view1.jpg?sfrm=png",
+    size: "OSFM",
+    flair: "New",
+    category: "mens-watches",
+    photos: [
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw79b847c1/products/A1243-595-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw38336b4d/products/A1243-595-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw3c6fce13/products/A1243-595-view4.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwe1c97a98/products/A1243-595-life_1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw0057fd34/products/A1243-595-seeiton.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+    ],
+  },
+  //Women's Watches
+  Archer: {
+    name: "Archer",
+    model: "A1090-502-00",
+    caseMeasurements: "38 mm",
+    type: "Watch",
+    color: "All Gold",
+    price: 200,
+    description:
+      "Point Taken. Right on target with a perfect balance between fashion and function, the Arrow is an easy addition to your daily dress code. The dial features commanding numerical indices and a brushed finish that easily goes between fun and formal.",
+    design:
+      "The Arrow takes menswear-inspired details and pairs it with Scandinavian design cues for a strong style that isn’t overly masculine.",
+    durability:
+      "A solid stainless steel case with hardened mineral crystal protects against the wear and tear of daily use.",
+    specialFeature:
+      "Dial details include applied Nixon wordmark and hour markers as well as printed numbers and custom molded hands.",
+    movement: "Miyota Japanese quartz 3 hand",
+    waterRating: "50 Meter / 5 ATM",
+    watchBand:
+      "17.5 mm custom solid stainless steel 5 link bracelet with a stainless steel locking clasp.",
+    watchDial:
+      "This dial includes applied Nixon wordmark and hour markers as well as printed numbers and custom molded hands.",
+    watchCase:
+      "38 mm, 50 meter/5 ATM solid stainless steel case with a hardened mineral crystal, screw down caseback.",
+    warranty:
+      "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
+    image:
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw2683c663/products/A1090-502-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+    size: "OSFM",
+    flair: "Personalize",
+    category: "womens-watches",
+    photos: [
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwee6ebeda/products/A1090-502-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw15749edf/products/A1090-502-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw7c0e5feb/products/A1090-502-view5.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw0ae28126/products/A1090-502-life_1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwa713072a/products/A1090-502-seeiton.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+    ],
+  },
+  Kingston: {
+    name: "Kingston",
+    model: "A099-3005-00",
+    caseMeasurements: "37 mm",
+    type: "Watch",
+    color: "Rose Gold",
+    price: 175,
+    description:
+      "Hello, Gorgeous. Comfortable in any setting, the Kensington adds an air of elegance to every ensemble. Striking dial details gives this timeless style just the right amount of intrigue.",
+    design:
+      "The little black dress of timepieces, this is one that everybody should have in their rotation. Its classic case and band shape get complimented by contemporary colors and material accents.",
+    durability:
+      "The solid stainless steel case and hardened mineral crystal help protect against the perils of everyday wear.",
+    specialFeature:
+      "Engraved and printed indices give the dial detail and depth.",
+    movement: "Miyota Japanese quartz 3 hand.",
+    waterRating: "50 Meter / 5 ATM",
+    watchBand:
+      "16 mm custom solid stainless steel bracelet with a stainless steel locking clasp.",
+    watchDial:
+      "This dial includes engraved and printed indices and custom molded hands.",
+    watchCase:
+      "37 mm, 50 meter/5 ATM solid stainless steel case with a hardened mineral crystal, stainless steel snap fit caseback and spring pin lugs.",
+    warranty:
+      "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
+    image:
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwd26c1405/products/A099-3005-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+    size: "OSFM",
+    flair: "Personalize",
+    category: "womens-watches",
+    photos: [
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw429dfc52/products/A099-3005-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw8a92ba1b/products/A099-3005-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw37b448f7/products/A099-3005-view5.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw6dadaf0d/products/A099-3005-life_1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw76154c5e/products/A099-3005-seeiton.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+    ],
+  },
+  Acetic: {
+    name: "Acetic",
+    model: "A327-2882-00",
+    caseMeasurements: "40 mm",
+    type: "Watch",
+    color: "Black Tortoise",
+    price: 125,
+    description:
+      "A True Original. Our iconic timepiece gets decked out in an acetate finish, creating a rich and vibrant pop of color. Acetate is a plant-based composite with unlimited potential for customization. Each pattern is crafted to give the Time Teller’s classic design some contemporary flair.",
+    design:
+      "Modeled after heritage watches, the Time Teller was created to have a timeless silhouette with a modern spin.",
+    durability:
+      "Besides the aesthetic qualities of acetate, the material is lightweight and durable. Because acetate is less rigid than other plastics, it’s more likely to bend and rebound than break.",
+    specialFeature:
+      "Custom jewelry style, three-link acetate bracelet with double-locking clasp.",
+    movement: "Miyota Japanese quartz 3 hand.",
+    waterRating: "100 Meter / 10 ATM",
+    watchBand:
+      "20mm custom handmade acetate 3 link bracelet with stainless steel double locking clasp with micro adjust.",
+    watchDial: "The dial includes applied indices, and custom molded hands.",
+    watchCase:
+      "40mm, 100 meter/10 ATM, custom handmade acetate case, fixed handmade acetate bezel, hardened mineral crystal, triple gasket stainless steel crown, stainless steel screw down caseback and spring pin lugs.",
+    warranty:
+      "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
+    image:
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw40cf4eee/products/A327-2882-view1.jpg?sfrm=png",
+    size: "OSFM",
+    flair: "New",
+    category: "womens-watches",
+    photos: [
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw88384374/products/A327-2882-view2.jpg?sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw8a92ba1b/products/A099-3005-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw4806d07d/products/A327-2882-view4.jpg?sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwcbd1cc5d/products/A327-2882-life_1.jpg?sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw3e5e9321/products/A327-2882-seeiton.jpg?sfrm=png",
+    ],
+  },
+  //Bags
+  TestBag1: {
+    name: "TestBag1",
+    model: "A327-2882-00",
+    caseMeasurements: "40 mm",
+    type: "Bag",
+    color: "Black Tortoise",
+    price: 125,
+    description:
+      "A True Original. Our iconic timepiece gets decked out in an acetate finish, creating a rich and vibrant pop of color. Acetate is a plant-based composite with unlimited potential for customization. Each pattern is crafted to give the Time Teller’s classic design some contemporary flair.",
+    design:
+      "Modeled after heritage watches, the Time Teller was created to have a timeless silhouette with a modern spin.",
+    durability:
+      "Besides the aesthetic qualities of acetate, the material is lightweight and durable. Because acetate is less rigid than other plastics, it’s more likely to bend and rebound than break.",
+    specialFeature:
+      "Custom jewelry style, three-link acetate bracelet with double-locking clasp.",
+    movement: "Miyota Japanese quartz 3 hand.",
+    waterRating: "100 Meter / 10 ATM",
+    watchBand:
+      "20mm custom handmade acetate 3 link bracelet with stainless steel double locking clasp with micro adjust.",
+    watchDial: "The dial includes applied indices, and custom molded hands.",
+    watchCase:
+      "40mm, 100 meter/10 ATM, custom handmade acetate case, fixed handmade acetate bezel, hardened mineral crystal, triple gasket stainless steel crown, stainless steel screw down caseback and spring pin lugs.",
+    warranty:
+      "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
+    image:
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw40cf4eee/products/A327-2882-view1.jpg?sfrm=png",
+    size: "OSFM",
+    flair: null,
+    category: "bags",
+    photos: [
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw88384374/products/A327-2882-view2.jpg?sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw8a92ba1b/products/A099-3005-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw4806d07d/products/A327-2882-view4.jpg?sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwcbd1cc5d/products/A327-2882-life_1.jpg?sfrm=png",
+      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw3e5e9321/products/A327-2882-seeiton.jpg?sfrm=png",
+    ],
+  },
+  //Headwear
+
+  //Clothing & Accessories
+
+  //Bands
 };
 
 export default products;

@@ -91,6 +91,18 @@ I recently read that using TailwindCSS in production is frowned upon. According 
 
 I've also learned how to use several NPM packages that I've previously never used. I want to learn and become familiar with the popular and widely used packages so that I can implement them easily when working on other projects within a team.
 
+Learned how to use Object.keys() in conjunction with Array.map() for some pretty satisfying results.
+
+{Object.keys(products).map((product) => {
+return (
+<Route path={`/${products[product].name}`}>
+<ProductPage
+                    product={products[product]}
+                    addToCart={addToCart}
+                  />
+</Route>
+);
+
 Overall this project has been a pleasant experience implementing all that I've learned as well as learning some fun new things along the way.
 
 ### Continued development

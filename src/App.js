@@ -8,8 +8,9 @@ import PushMenuNav from "./Components/PushMenuNav";
 /* import PromoBar from "./Components/PromoBar"; */
 import Cart from "./Pages/Cart/Cart";
 import products from "./Constants/Products";
+import productCategories from "./Constants/ProductCategories";
 import ProductPage from "./Pages/Product/ProductPage";
-import Button from "./Components/Button";
+import ShopPage from "./Pages/Shop/ShopPage";
 
 import ScrollToTop from "./Components/ScrollToTop";
 
@@ -24,6 +25,18 @@ function App() {
   function removeFromCart(product) {
     setCartState((cartState) => cartState.filter((item) => item !== product));
   }
+
+  function filterProducts(category) {
+    return Object.keys(products).filter(
+      (product) => products[product].category === category
+    );
+  }
+
+  console.log(filterProducts("mens-watches"));
+  console.log(filterProducts("womens-watches"));
+  console.log(filterProducts("bags"));
+  console.log(filterProducts("headwear"));
+  console.log(filterProducts("clothing-accessories"));
 
   useEffect(() => {
     console.log(cartState);
@@ -63,21 +76,26 @@ function App() {
             <Route path="/Cart">
               <Cart cartState={cartState} removeFromCart={removeFromCart} />
             </Route>
-            <Route path="/regulator">
-              <ProductPage product={products.Regulator} addToCart={addToCart} />
-            </Route>
-            <Route path="/smoke">
-              <ProductPage product={products.Smoke} addToCart={addToCart} />
-            </Route>
-            <Route path="/corporate">
-              <ProductPage product={products.Corporate} addToCart={addToCart} />
-            </Route>
-            <Route path="/kingston">
-              <ProductPage product={products.Kingston} addToCart={addToCart} />
-            </Route>
-            <Route path="/chronus">
-              <ProductPage product={products.Chronus} addToCart={addToCart} />
-            </Route>
+            {Object.keys(products).map((product) => {
+              return (
+                <Route path={`/${products[product].name}`}>
+                  <ProductPage
+                    product={products[product]}
+                    addToCart={addToCart}
+                  />
+                </Route>
+              );
+            })}
+            {productCategories.map((category) => {
+              return (
+                <Route path={`/${category}`}>
+                  <ShopPage
+                    products={products}
+                    filteredProducts={filterProducts(category)}
+                  />
+                </Route>
+              );
+            })}
           </Switch>
           <Footer />
         </div>
