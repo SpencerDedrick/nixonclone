@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/nixonclone/static/css/main.d025f7db.chunk.css",
-    "main.js": "/nixonclone/static/js/main.4bfbf5dd.chunk.js",
-    "main.js.map": "/nixonclone/static/js/main.4bfbf5dd.chunk.js.map",
+    "main.css": "/nixonclone/static/css/main.d2c6a0a7.chunk.css",
+    "main.js": "/nixonclone/static/js/main.8ffb0fb4.chunk.js",
+    "main.js.map": "/nixonclone/static/js/main.8ffb0fb4.chunk.js.map",
     "runtime-main.js": "/nixonclone/static/js/runtime-main.a9232c2c.js",
     "runtime-main.js.map": "/nixonclone/static/js/runtime-main.a9232c2c.js.map",
     "static/css/2.380b4898.chunk.css": "/nixonclone/static/css/2.380b4898.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.7237b473.chunk.js.map": "/nixonclone/static/js/2.7237b473.chunk.js.map",
     "index.html": "/nixonclone/index.html",
     "static/css/2.380b4898.chunk.css.map": "/nixonclone/static/css/2.380b4898.chunk.css.map",
-    "static/css/main.d025f7db.chunk.css.map": "/nixonclone/static/css/main.d025f7db.chunk.css.map",
+    "static/css/main.d2c6a0a7.chunk.css.map": "/nixonclone/static/css/main.d2c6a0a7.chunk.css.map",
     "static/js/2.7237b473.chunk.js.LICENSE.txt": "/nixonclone/static/js/2.7237b473.chunk.js.LICENSE.txt",
     "static/media/slick-theme.css": "/nixonclone/static/media/slick.c94f7671.ttf"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.a9232c2c.js",
     "static/css/2.380b4898.chunk.css",
     "static/js/2.7237b473.chunk.js",
-    "static/css/main.d025f7db.chunk.css",
-    "static/js/main.4bfbf5dd.chunk.js"
+    "static/css/main.d2c6a0a7.chunk.css",
+    "static/js/main.8ffb0fb4.chunk.js"
   ]
 }
