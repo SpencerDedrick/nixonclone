@@ -2,11 +2,39 @@ import React from "react";
 import { Link } from "react-router-dom";
 import StarRatingComponent from "react-star-rating-component";
 import HomeProductSlider from "../Home/HomeProductSlider";
+import styled from "styled-components";
+
+const ShopPageBannerStyled = styled.div`
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://www.nixon.com/on/demandware.static/-/Library-Sites-Nixon/default/dw3980fa44/21-2/after-xmas-ool/After_Christmas_Sale_Desktop_1440_Week1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+  margin-bottom: 20px;
+`;
+
+const ShopPageBanner = () => {
+  return (
+    <div className="home__hero-container grid">
+      <div className="home__hero-content text-center py-12 px-8 sm:text-left lg:px-20">
+        <p className="text-white font-bold text-2xl lg:text-4xl home__hero-heading py-10 ">
+          Time is Ticking
+        </p>
+        <p className="text-white text-md pb-5 font-semibold home__hero-text">
+          Dont Miss Out on These Timeless Styles
+        </p>
+      </div>
+    </div>
+  );
+};
 
 function ShopPage(props) {
   let { products, filteredProducts } = props;
   return (
     <div>
+      <ShopPageBannerStyled>
+        <ShopPageBanner />
+      </ShopPageBannerStyled>
       <div className="grid grid-cols-2 md:grid-cols-3">
         {filteredProducts.map((product) => {
           return (

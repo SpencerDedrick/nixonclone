@@ -5,7 +5,6 @@ import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import PushMenuNav from "./Components/PushMenuNav";
-/* import PromoBar from "./Components/PromoBar"; */
 import Cart from "./Pages/Cart/Cart";
 import products from "./Constants/Products";
 import productCategories from "./Constants/ProductCategories";
@@ -32,12 +31,6 @@ function App() {
     );
   }
 
-  console.log(filterProducts("mens-watches"));
-  console.log(filterProducts("womens-watches"));
-  console.log(filterProducts("bags"));
-  console.log(filterProducts("headwear"));
-  console.log(filterProducts("clothing-accessories"));
-
   useEffect(() => {
     console.log(cartState);
   }, [cartState]);
@@ -58,12 +51,18 @@ function App() {
     }
   }
 
+  console.log(cartState);
+  console.log(cartState.length);
+
   return (
     <div className="App">
       <HashRouter>
         <ScrollToTop />
-        {/*   <PromoBar /> */}
-        <Header toggleMenu={toggleMenu} closeMenu={closeMenu} />
+        <Header
+          toggleMenu={toggleMenu}
+          closeMenu={closeMenu}
+          cartState={cartState}
+        />
         <PushMenuNav menuState={menuState} toggleMenu={toggleMenu} />
         <div id="page-wrap">
           <Switch>

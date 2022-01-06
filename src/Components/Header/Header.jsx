@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PromoBar from "./PromoBar";
+import { DesktopNav } from "./DesktopNav";
 
 const HeaderStyled = styled.div`
   display: flex;
@@ -10,6 +12,10 @@ const HeaderStyled = styled.div`
   align-items: center;
   padding: 1rem 0.75rem;
   width: 100vw;
+
+  @media only screen and (min-width: 1024px) {
+    display: none;
+  }
 
   /* MENU BUTTON STYLES */
   .menu-btn {
@@ -58,6 +64,10 @@ const HeaderStyled = styled.div`
   .menu-btn.open .menu-btn__burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
+
+  @media (min-width: 768px) {
+    padding-right: 2rem;
+  }
 `;
 
 //MENU BUTTON HANDLERS
@@ -85,7 +95,7 @@ function toggleMenuButton() {
 function HeaderMenuButton(props) {
   return (
     <div
-      className="cursor-pointer md:hidden "
+      className="cursor-pointer  "
       onClick={() => handleMenuButtonClick(props)}
     >
       <div
@@ -102,7 +112,12 @@ function HeaderMenuButton(props) {
 function HeaderCart(props) {
   return (
     // props.props????? There must be a better way to handle this
-    <Link to="/cart" onClick={() => handleOffMenuClick(props.props)}>
+    <Link
+      to="/cart"
+      onClick={() => handleOffMenuClick(props.props)}
+      className="flex"
+    >
+      <p className="px-2 font-bold text-lg">{props.cartState.length}</p>
       <FontAwesomeIcon icon={faShoppingCart} className="text-2xl" />
     </Link>
   );
@@ -110,17 +125,21 @@ function HeaderCart(props) {
 
 function Header(props) {
   return (
-    <HeaderStyled>
-      <HeaderMenuButton toggleMenu={props.toggleMenu} />
-      <Link
-        to="/"
-        className="text-2xl font-black"
-        onClick={() => handleOffMenuClick(props)}
-      >
-        HOME
-      </Link>
-      <HeaderCart props={props} />
-    </HeaderStyled>
+    <div>
+      <PromoBar />
+      <DesktopNav />
+      <HeaderStyled>
+        <HeaderMenuButton toggleMenu={props.toggleMenu} />
+        <Link
+          to="/"
+          className="text-2xl font-black"
+          onClick={() => handleOffMenuClick(props)}
+        >
+          HOME
+        </Link>
+        <HeaderCart props={props} cartState={props.cartState} />
+      </HeaderStyled>
+    </div>
   );
 }
 

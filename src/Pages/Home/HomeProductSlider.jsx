@@ -54,6 +54,10 @@ const ProductSliderStyled = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  &:hover {
+    background: lightgray;
+  }
   .flair-text {
     width: 100px;
   }

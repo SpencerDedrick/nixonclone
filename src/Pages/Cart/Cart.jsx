@@ -58,14 +58,16 @@ function Cart(props) {
       <div className="bg-gray-100 mx-5 py-5">
         <div className="flex w-full justify-center">
           <p className="pr-2 text-lg">Order Total</p>
-          <p className="font-bold pl-2 text-lg">$0.00</p>
+          <p className="font-bold pl-2 text-lg">
+            ${calculateSubTotal(cartState)}.00
+          </p>
         </div>
         <p className="text-xs text-left px-3 my-3">
           Due to carrier volumes beyond our control, related to COVID-19, it may
           take 2-3 more business days to receive any order, regardless of
           shipment method.
         </p>
-        <button className="bg-green-500 my-3 w-11/12 rounded-sm text-white font-semibold py-1 px-3">
+        <button className="bg-green-500 my-3 w-11/12 rounded-sm text-white font-semibold py-1 px-3 md:w-36">
           <FontAwesomeIcon icon={faLock} className="mx-2" />
           Checkout
         </button>

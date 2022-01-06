@@ -4,7 +4,7 @@ import PushMenu from "react-burger-menu/lib/menus/push";
 import HeaderMenuItem from "./HeaderMenuItem";
 import styled from "styled-components";
 
-const navMenuItems = [
+export const navMenuItems = [
   {
     text: "Men's Watches",
     link: "mens-watches",
@@ -44,6 +44,11 @@ const navMenuItems = [
     text: "Gifts",
     link: "gifts",
     sub: true,
+  },
+  {
+    text: "Sale",
+    link: "sale",
+    sub: false,
   },
 ];
 const PushMenuStyled = styled.div``;

@@ -320,10 +320,11 @@ function ProductPageDetailsDesktop(props) {
           <p className="m-auto text-center my-5 text-sm font-semibold">
             <FontAwesomeIcon icon={faTruck} /> Free Shipping + Returns
           </p>
-          <div className="text-center my-5">
-            <Button type="black" onClick={() => handleClick(product)}>
-              Add to Cart
-            </Button>
+          <div
+            className="text-center my-5"
+            onClick={() => handleClick(product)}
+          >
+            <Button type="black">Add to Cart</Button>
           </div>
         </div>
       </div>
@@ -338,7 +339,7 @@ function ProductPage(props) {
     <StyledProductPage className=" w-screen px-2 md:px-0 md:bg-gray-100">
       <ProductPageBreadCrumbs product={product} />
       <ProductPageDetailsMobile product={product} addToCart={addToCart} />
-      <ProductPageDetailsDesktop product={product} />
+      <ProductPageDetailsDesktop product={product} addToCart={addToCart} />
       <ProductPageFeatures product={product} />
       <ProductPageCollapse product={product} />
       <div className="bg-white my-20">

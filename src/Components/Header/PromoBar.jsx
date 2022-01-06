@@ -5,30 +5,22 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import styled from "styled-components";
 
 const StyledPromoBar = styled.div`
-  /*   height: 65px;
-  max-height: 7vh;
-  width: 100vw;
-  color: white;
-  background: blue;
-  display: flex;
-  justify-content: space-between;
-
-  p {
-    color: white;
-  } */
   background: black;
-  max-height: 7vh;
+  max-height: 6vh;
   width: 100vw;
   max-width: 100vw;
   height: 65px;
   text-align: center;
   display: grid;
   place-items: center;
+
+  .slider {
+    max-width: 600px;
+  }
   p {
     color: white;
     max-width: 80vw;
@@ -52,12 +44,11 @@ function NextArrow(props) {
         ...style,
         cursor: "pointer",
         position: "absolute",
-        left: 0,
-        top: "-5px",
+        left: 5,
+        top: "3px",
         color: "white",
         background: "black",
-        fontSize: "30px",
-        padding: "5px",
+        fontSize: "20px",
       }}
       onClick={onClick}
     />
@@ -73,13 +64,11 @@ function PrevArrow(props) {
         ...style,
         cursor: "pointer",
         position: "absolute",
-        right: 10,
-        zIndex: "1",
-        top: "-5px",
+        right: "5px",
+        top: "3px",
         color: "white",
-        background: "black",
-        fontSize: "30px",
-        padding: "5px",
+        zIndex: 1,
+        fontSize: "20px",
       }}
       onClick={onClick}
     />
@@ -91,27 +80,22 @@ const settings = {
   vertical: true,
   autoplay: true,
   touch: true,
-  speed: 500,
+  speed: 1000,
+  autoplaySpeed: 5000,
   slidesToShow: 1,
   slidesToScroll: 1,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
-  variableWidth: true,
+  className: "slider",
 };
 
 function PromoBar() {
   return (
     <StyledPromoBar>
       <Slider {...settings}>
-        <div>
-          <p>Shop Now, Pay Later. With Afterpay.</p>
-        </div>
-        <div>
-          <p>Personalize It With Free Engraving.</p>
-        </div>
-        <div>
-          <p>Sign Up For 10% Off Your First Order.</p>
-        </div>
+        <p>Shop Now, Pay Later. With Afterpay.</p>
+        <p>Personalize It With Free Engraving.</p>
+        <p>Sign Up For 10% Off Your First Order.</p>
       </Slider>
     </StyledPromoBar>
   );
