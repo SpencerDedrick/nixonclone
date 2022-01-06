@@ -30,6 +30,11 @@ function App() {
       (product) => products[product].category === category
     );
   }
+  function allWatches() {
+    return Object.keys(products).filter(
+      (product) => products[product].type === "Watch"
+    );
+  }
 
   useEffect(() => {
     console.log(cartState);
@@ -95,6 +100,18 @@ function App() {
                 </Route>
               );
             })}
+            <Route path={`/watches`}>
+              <ShopPage products={products} filteredProducts={allWatches()} />
+            </Route>
+            <Route path={`/sale`}>
+              <ShopPage products={products} filteredProducts={allWatches()} />
+            </Route>
+            <Route path={`/bags`}>
+              <ShopPage products={products} filteredProducts={allWatches()} />
+            </Route>
+            <Route path={`/headwear`}>
+              <ShopPage products={products} filteredProducts={allWatches()} />
+            </Route>
           </Switch>
           <Footer />
         </div>
