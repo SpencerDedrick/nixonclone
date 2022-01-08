@@ -122,10 +122,56 @@ display: none;
     margin: auto;
     font-size: .7rem;
     font-weight: 500;
+    position: relative;
     
 
     &__icon {
       margin: 0 5px;
+    }
+  }
+
+  .nav__dropdown {
+    border-top: 1px lightgrey solid;
+    position: absolute;
+    top: 45px;
+    width: 100vw;
+    height: 365px;
+    background: white;
+    display: flex;
+    padding-top: 20px;
+    
+    &__mainlinks {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.1rem;
+      font-weight: 500;
+      padding-right: 60px;
+      height: 100%;
+      justify-content: space-around;
+
+      &__container {
+      display: flex;
+      height: 50%;
+      justify-content:flex-end;
+      width: 30%;
+      border-right: 1px solid lightgrey;
+    }
+    }
+
+    
+
+    &__items {
+      width: 100%;
+      max-width: 1100px;
+      display: flex;
+      justify-content: space-around;
+      margin-left: auto;
+    }
+
+    &__item {
+      font-weight: 500;
+      font-size: 1.05rem;
+
     }
   }
 
@@ -224,19 +270,85 @@ const AccountMenu = () => {
 };
 
 const NavLinks = () => {
+  const [open, setOpen] = useState(false);
+  const [navLinkItems, setNavLinkItems] = useState({
+    Styles: [],
+    Use: [],
+    Trending: [],
+  });
+
+  useEffect(() => {
+    console.log(open);
+    console.log(Object.keys(navLinkItems)[1]);
+  }, [open, navLinkItems]);
+
   return (
-    <div className="nav__nav-links">
+    <div className="nav__nav-links" onMouseLeave={() => setOpen(false)}>
       {navMenuItems.map((item) => (
-        <Link to={item.link}>
-          {item.text}
-          {item.sub ? (
-            <FontAwesomeIcon
-              icon={faChevronDown}
-              className="nav__nav-links__icon"
-            />
-          ) : null}
-        </Link>
+        <NavLink
+          item={item}
+          setOpen={setOpen}
+          setNavLinkItems={setNavLinkItems}
+        />
       ))}
+      {open ? (
+        <NavDropDown navLinkItems={navLinkItems} setOpen={setOpen} />
+      ) : null}
+    </div>
+  );
+};
+
+const NavLink = (props) => {
+  let { item, setOpen, setNavLinkItems } = props;
+
+  const onMouseOver = (items) => {
+    if (items) {
+      setOpen(true);
+      setNavLinkItems(items);
+    }
+  };
+
+  const onMouseLeave = () => {
+    setOpen(false);
+  };
+
+  return (
+    <Link
+      to={item.link}
+      className="h-full cursor-pointer grid place-items-center"
+      onMouseOver={() => onMouseOver(item.links)}
+    >
+      <div>
+        {item.text}
+        {item.sub ? (
+          <FontAwesomeIcon
+            icon={faChevronDown}
+            className="nav__nav-links__icon"
+          />
+        ) : null}
+      </div>
+    </Link>
+  );
+};
+
+const NavDropDown = (props) => {
+  let { navLinkItems, setOpen } = props;
+
+  let links = Object.keys(navLinkItems).map((key) => {
+    return <h1 className="nav__dropdown__item">{key}</h1>;
+  });
+
+  return (
+    <div className="nav__dropdown">
+      <div className="nav__dropdown__mainlinks__container">
+        <div className="nav__dropdown__mainlinks">
+          <Link to="/">New Arrivals</Link>
+          <Link to="/">Best Sellers</Link>
+          <Link to="/">Custom</Link>
+          <Link to="/">Shop All</Link>
+        </div>
+      </div>
+      <div className="nav__dropdown__items">{links}</div>
     </div>
   );
 };

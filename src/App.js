@@ -112,6 +112,18 @@ function App() {
             <Route path={`/headwear`}>
               <ShopPage products={products} filteredProducts={allWatches()} />
             </Route>
+            <Route path={`/clothing-and-accessories`}>
+              <ShopPage products={products} filteredProducts={allWatches()} />
+            </Route>
+            <Route path={`/bands`}>
+              <ShopPage products={products} filteredProducts={allWatches()} />
+            </Route>
+            <Route path={`/custom`}>
+              <ShopPage products={products} filteredProducts={allWatches()} />
+            </Route>
+            <Route path={`/gifts`}>
+              <ShopPage products={products} filteredProducts={allWatches()} />
+            </Route>
           </Switch>
           <Footer />
         </div>
