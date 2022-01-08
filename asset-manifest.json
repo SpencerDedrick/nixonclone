@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nixonclone/static/css/main.67e401b4.chunk.css",
-    "main.js": "/nixonclone/static/js/main.0da50c7b.chunk.js",
-    "main.js.map": "/nixonclone/static/js/main.0da50c7b.chunk.js.map",
+    "main.js": "/nixonclone/static/js/main.80a5b3ad.chunk.js",
+    "main.js.map": "/nixonclone/static/js/main.80a5b3ad.chunk.js.map",
     "runtime-main.js": "/nixonclone/static/js/runtime-main.a9232c2c.js",
     "runtime-main.js.map": "/nixonclone/static/js/runtime-main.a9232c2c.js.map",
     "static/css/2.380b4898.chunk.css": "/nixonclone/static/css/2.380b4898.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.380b4898.chunk.css",
     "static/js/2.d5231371.chunk.js",
     "static/css/main.67e401b4.chunk.css",
-    "static/js/main.0da50c7b.chunk.js"
+    "static/js/main.80a5b3ad.chunk.js"
   ]
 }
