@@ -261,7 +261,7 @@ const AccountMenu = () => {
           className="nav__account-menu__sign-in__icon"
         />
       </p>
-      <Link className="nav__account-menu__cart">
+      <Link to="/cart" className="nav__account-menu__cart">
         <p className="nav__account-menu__cart-qty">0</p>
         <FontAwesomeIcon icon={faShoppingCart} />
       </Link>
