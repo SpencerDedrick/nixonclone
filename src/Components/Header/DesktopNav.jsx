@@ -139,6 +139,12 @@ display: none;
     background: white;
     display: flex;
     padding-top: 20px;
+    box-shadow:  0px 4px 4px #232323;
+    transition: all 1s ease-in;
+
+    &__mainlink:hover {
+      border-bottom: 1px solid black;
+    }
     
     &__mainlinks {
       display: flex;
@@ -159,18 +165,36 @@ display: none;
     }
 
     
-
+/* 
     &__items {
-      width: 100%;
+      width: 50%;
       max-width: 1100px;
       display: flex;
       justify-content: space-around;
-      margin-left: auto;
-    }
+      margin-right: auto;
+    } */
 
     &__item {
-      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      height: 50%;
+      padding: 0 50px;
+
+      &__header {
+        font-weight: 500;
       font-size: 1.05rem;
+      margin-bottom: 10px;
+      }
+
+      &__link {
+        color: grey;
+        padding: 5px 0;
+       
+      }
+
+      &__link:hover {
+        color: #232323;
+      }
 
     }
   }
@@ -246,7 +270,8 @@ const LogoContainer = () => {
   );
 };
 
-const AccountMenu = () => {
+const AccountMenu = (props) => {
+  let { cartState } = props;
   return (
     <div className="nav__top__item nav__account-menu">
       <Link to="/" className="nav__account-menu__country">
@@ -262,7 +287,7 @@ const AccountMenu = () => {
         />
       </p>
       <Link to="/cart" className="nav__account-menu__cart">
-        <p className="nav__account-menu__cart-qty">0</p>
+        <p className="nav__account-menu__cart-qty">{cartState.length}</p>
         <FontAwesomeIcon icon={faShoppingCart} />
       </Link>
     </div>
@@ -335,32 +360,71 @@ const NavDropDown = (props) => {
   let { navLinkItems, setOpen } = props;
 
   let links = Object.keys(navLinkItems).map((key) => {
-    return <h1 className="nav__dropdown__item">{key}</h1>;
+    return (
+      <div className="nav__dropdown__item">
+        <h1 className="nav__dropdown__item__header">{key}</h1>
+        {navLinkItems[key].map((link) => {
+          return (
+            <Link
+              to={`/sale`}
+              className="nav__dropdown__item__link"
+              onClick={() => setOpen(false)}
+            >
+              {link}
+            </Link>
+          );
+        })}
+      </div>
+    );
   });
 
   return (
     <div className="nav__dropdown">
       <div className="nav__dropdown__mainlinks__container">
         <div className="nav__dropdown__mainlinks">
-          <Link to="/">New Arrivals</Link>
-          <Link to="/">Best Sellers</Link>
-          <Link to="/">Custom</Link>
-          <Link to="/">Shop All</Link>
+          <Link
+            className="nav__dropdown__mainlink"
+            to="/"
+            onClick={() => setOpen(false)}
+          >
+            New Arrivals
+          </Link>
+          <Link
+            className="nav__dropdown__mainlink"
+            to="/"
+            onClick={() => setOpen(false)}
+          >
+            Best Sellers
+          </Link>
+          <Link
+            className="nav__dropdown__mainlink"
+            to="/"
+            onClick={() => setOpen(false)}
+          >
+            Custom
+          </Link>
+          <Link
+            className="nav__dropdown__mainlink"
+            to="/"
+            onClick={() => setOpen(false)}
+          >
+            Shop All
+          </Link>
         </div>
       </div>
-      <div className="nav__dropdown__items">{links}</div>
+      {links}
     </div>
   );
 };
 
-export const DesktopNav = () => {
+export const DesktopNav = (props) => {
   return (
     <nav>
       <DesktopNavStyled>
         <div className="nav__top">
           <SearchBar />
           <LogoContainer />
-          <AccountMenu />
+          <AccountMenu cartState={props.cartState} />
         </div>
         <NavLinks />
       </DesktopNavStyled>

@@ -109,7 +109,7 @@ function HeaderMenuButton(props) {
 }
 
 // HEADER CART ICON
-function HeaderCart(props) {
+export function HeaderCart(props) {
   return (
     // props.props????? There must be a better way to handle this
     <Link
@@ -127,7 +127,7 @@ function Header(props) {
   return (
     <div>
       <PromoBar />
-      <DesktopNav />
+      <DesktopNav cartState={props.cartState} />
       <HeaderStyled>
         <HeaderMenuButton toggleMenu={props.toggleMenu} />
         <Link
