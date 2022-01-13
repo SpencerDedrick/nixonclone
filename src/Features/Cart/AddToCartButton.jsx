@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import addToCart from "./cartSlice";
+import { addToCart } from "./cartSlice";
 
 export const AddToCartButton = (props) => {
-  let { product } = props;
-  const cart = useSelector((state) => state.value);
+  let { product, children } = props;
+  const cart = useSelector((state) => state.cart);
 
   useEffect(() => {
     console.log(cart);
@@ -13,10 +13,9 @@ export const AddToCartButton = (props) => {
 
   const dispatch = useDispatch();
 
-  const onAddToCartClicked = (product) => {
-    dispatch(addToCart());
-    console.log(`${product} added to cart`);
+  const onAddToCartClicked = () => {
+    dispatch(addToCart(product));
   };
 
-  return <div onClick={onAddToCartClicked}></div>;
+  return <div onClick={onAddToCartClicked}>{children}</div>;
 };

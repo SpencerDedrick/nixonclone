@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import HomeProductSlider from "../Home/HomeProductSlider";
+import { AddToCartButton } from "../../Features/Cart/AddToCartButton";
 
 let Panel = Collapse.Panel;
 
@@ -64,6 +65,7 @@ function ProductPageBreadCrumbs(props) {
 
 function ProductPageFeatures(props) {
   let { product } = props;
+  console.log(`this is the ${product}`);
   return (
     <div className="bg-white">
       <hr className="py-5 md:hidden" />
@@ -73,6 +75,9 @@ function ProductPageFeatures(props) {
             <p className="text-xl font-bold tracking-widest border-b-2 my-5 border-black w-full">
               Product Features
             </p>
+            <AddToCartButton product={product}>
+              <button>ADD TO CART REDUX</button>
+            </AddToCartButton>
             <div className="border-b-2 my-3">
               <p className="font-medium text-gray-500 my-2 tracking-wide">
                 Design
@@ -325,6 +330,7 @@ function ProductPageDetailsDesktop(props) {
             onClick={() => handleClick(product)}
           >
             <Button type="black">Add to Cart</Button>
+            <div></div>
           </div>
         </div>
       </div>
