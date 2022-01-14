@@ -75,9 +75,7 @@ function ProductPageFeatures(props) {
             <p className="text-xl font-bold tracking-widest border-b-2 my-5 border-black w-full">
               Product Features
             </p>
-            <AddToCartButton product={product}>
-              <button>ADD TO CART REDUX</button>
-            </AddToCartButton>
+
             <div className="border-b-2 my-3">
               <p className="font-medium text-gray-500 my-2 tracking-wide">
                 Design
@@ -249,9 +247,11 @@ function ProductPageDetailsMobile(props) {
       <p className="m-auto text-center my-5 text-sm font-semibold">
         <FontAwesomeIcon icon={faTruck} /> Free Shipping + Returns
       </p>
-      <div className="text-center my-5" onClick={() => handleClick(product)}>
+
+      <AddToCartButton product={product} className="text-center my-5">
         <Button type="black">Add to Cart</Button>
-      </div>
+      </AddToCartButton>
+
       <hr className="my-5" />
       <p className="text-sm tracking-wide leading-relaxed  py-3">
         {product.description}
@@ -329,7 +329,9 @@ function ProductPageDetailsDesktop(props) {
             className="text-center my-5"
             onClick={() => handleClick(product)}
           >
-            <Button type="black">Add to Cart</Button>
+            <AddToCartButton product={product}>
+              <Button type="black">Add to Cart</Button>
+            </AddToCartButton>
             <div></div>
           </div>
         </div>

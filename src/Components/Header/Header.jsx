@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PromoBar from "./PromoBar";
 import { DesktopNav } from "./DesktopNav";
+import { useSelector } from "react-redux";
 
 const HeaderStyled = styled.div`
   display: flex;
@@ -110,6 +111,7 @@ function HeaderMenuButton(props) {
 
 // HEADER CART ICON
 export function HeaderCart(props) {
+  const cart = useSelector((state) => state.cart);
   return (
     // props.props????? There must be a better way to handle this
     <Link
@@ -117,7 +119,7 @@ export function HeaderCart(props) {
       onClick={() => handleOffMenuClick(props.props)}
       className="flex"
     >
-      <p className="px-2 font-bold text-lg">{props.cartState.length}</p>
+      <p className="px-2 font-bold text-lg">{cart.length}</p>
       <FontAwesomeIcon icon={faShoppingCart} className="text-2xl" />
     </Link>
   );
@@ -125,7 +127,7 @@ export function HeaderCart(props) {
 
 function Header(props) {
   return (
-    <div>
+    <header>
       <PromoBar />
       <DesktopNav cartState={props.cartState} />
       <HeaderStyled>
@@ -139,7 +141,7 @@ function Header(props) {
         </Link>
         <HeaderCart props={props} cartState={props.cartState} />
       </HeaderStyled>
-    </div>
+    </header>
   );
 }
 

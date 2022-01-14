@@ -56,9 +56,6 @@ function App() {
     }
   }
 
-  console.log(cartState);
-  console.log(cartState.length);
-
   return (
     <div className="App">
       <HashRouter>

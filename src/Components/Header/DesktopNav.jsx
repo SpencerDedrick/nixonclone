@@ -9,6 +9,7 @@ import {
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useSelector } from "react-redux";
 
 const DesktopNavStyled = styled.div`
 display: none;
@@ -271,7 +272,8 @@ const LogoContainer = () => {
 };
 
 const AccountMenu = (props) => {
-  let { cartState } = props;
+  const cart = useSelector((state) => state.cart);
+
   return (
     <div className="nav__top__item nav__account-menu">
       <Link to="/" className="nav__account-menu__country">
@@ -287,7 +289,7 @@ const AccountMenu = (props) => {
         />
       </p>
       <Link to="/cart" className="nav__account-menu__cart">
-        <p className="nav__account-menu__cart-qty">{cartState.length}</p>
+        <p className="nav__account-menu__cart-qty">{cart.length}</p>
         <FontAwesomeIcon icon={faShoppingCart} />
       </Link>
     </div>
