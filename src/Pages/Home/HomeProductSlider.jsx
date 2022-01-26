@@ -14,32 +14,32 @@ import { Link } from "react-router-dom";
 const products = [
   {
     name: "Kingston",
-    img: "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwd26c1405/products/A099-3005-view1.png?sw=300&sh=330&sm=fit",
+    img: "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A099-1045-view1.png?v=1639584434",
     price: "$125.00",
     flair: "Personalize",
   },
   {
     name: "Smoke",
-    img: "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw7c0ee826/products/A1320-001-view1.png?sw=300&sh=330&sm=fit",
+    img: "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1320-001-view1.png?v=1639584605",
     price: "$175.00",
     flair: "New",
   },
 
   {
     name: "Corporate",
-    img: "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw4c17d923/products/A346-001-view1.png?sw=300&sh=330&sm=fit",
+    img: "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1242-1041-view1.png?v=1639584545",
     price: "$225.00",
     flair: "New",
   },
   {
     name: "Regulator",
-    img: "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw441f4215/products/A1180-001-view1.png?sw=300&sh=330&sm=fit",
+    img: "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1180-867-view1.png?v=1639584510",
     price: "$400.00",
     flair: "Best Seller",
   },
   {
     name: "Chronus",
-    img: "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwd5d23b21/products/A083-502-view1.png?sw=300&sh=330&sm=fit",
+    img: "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A083-502-view1.png?v=1639584429",
     price: "$500.00",
     flair: "Best Seller",
   },

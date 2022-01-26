@@ -2,7 +2,9 @@
 
 Thanks for READING ME.
 
-This is what will be one of my biggest and most ambitions projects yet. I will be creating a "clone" of the Nixon brand website.
+This is what will be one of my biggest and most ambitious projects yet. I will be creating a "clone" of the Nixon brand website. Fair warning - the code in this repository is an all you can eat buffet of spaghetti code and div soup. I am aware of this and I am working on learning how to write better, cleaner code. As well as, use more appropriate semantics. I appreciate your grace in this matter.
+
+If you do happen to peek at the code I would greatly appreciate any feedback!
 
 ## Table of contents
 
@@ -31,10 +33,12 @@ Spencer Dedrick
 
 ### Screenshot
 
+![](public\images\eCommerce.png)
+
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-- Source Code URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://spencerdedrick.github.io/nixonclone/](https://spencerdedrick.github.io/nixonclone/#/)
+- Source Code URL: [https://github.com/SpencerDedrick/nixonclone](https://github.com/SpencerDedrick/nixonclone)
 
 ## My process
 
@@ -74,6 +78,7 @@ I built the function for the button components directly into the Header.jsx file
 - Grid
 - Mobile first design
 - [React](https://reactjs.org/) - JS library
+- [Redux](https://redux.js.org/) - State management library
 - [Create React App](https://create-react-app.dev/) - JS Utility
 - [CRACO](https://github.com/gsoft-inc/craco) - JS Utility
 - [TailwindCSS](https://tailwindcss.com/) - CSS Utility

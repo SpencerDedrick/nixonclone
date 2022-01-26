@@ -10,10 +10,24 @@ import products from "./Constants/Products";
 import productCategories from "./Constants/ProductCategories";
 import ProductPage from "./Pages/Product/ProductPage";
 import ShopPage from "./Pages/Shop/ShopPage";
+import Products from "./Features/Products/products";
 
 import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
+  /* const api_url = "https://sd-watch-shop-api.herokuapp.com/watches";
+
+  let stuff;
+
+  async function getData() {
+    const response = await fetch(api_url);
+    stuff = await response.json();
+  }
+  getData();
+  useEffect(() => {
+    console.log(stuff);
+  }); */
+
   const [menuState, setMenuState] = useState(false);
   const [cartState, setCartState] = useState([]);
 
@@ -70,6 +84,7 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home />
+              <Products />
             </Route>
             <Route path="/AboutUs">
               <h1>About Us</h1>

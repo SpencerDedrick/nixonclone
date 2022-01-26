@@ -26,16 +26,16 @@ const products = {
     warranty:
       "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
     image:
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwd5d23b21/products/A083-502-view1.jpg?sw=980&sh=1200&sm=fit&sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A083-502-view1.png?v=1639584429",
     size: "OSFM",
     flair: "Best Seller",
     category: "mens-watches",
     photos: [
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw7ec43faa/products/A083-502-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwc7426303/products/A083-502-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwdf548e82/products/A083-502-view5.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwa2104ac8/products/A083-502-life_1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw97d8c471/products/A083-502-seeiton.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A083-502-view2.png?v=1639585058",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A083-502-view3.png?v=1639585608",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A083-502-view5.png?v=1639586343",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A083-502-life_1.png?v=1639586928",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A083-502-seeiton.png?v=1639587270",
     ],
   },
   Regulator: {
@@ -64,16 +64,16 @@ const products = {
     warranty:
       "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
     image:
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw441f4215/products/A1180-001-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1180-867-view1.png?v=1639584510",
     size: "OSFM",
     flair: "Best Seller",
     category: "mens-watches",
     photos: [
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwe42247ad/products/A1180-001-view2.jpg?sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwd3d1612f/products/A1180-001-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw18d675cf/products/A1180-001-view5.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw9a074d1d/products/A1180-001-life_1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwded0d51a/products/A1180-001-seeiton.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1180-867-view2.png?v=1639585138",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1180-867-view3.png?v=1639585687",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1180-867-view5.png?v=1639586401",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1180-867-Life_1.png?v=1639587007",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1180-867-seeiton.png?v=1639587334",
     ],
   },
   Corporate: {
@@ -101,16 +101,16 @@ const products = {
     warranty:
       "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
     image:
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw4c17d923/products/A346-001-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A346-001-view1.png?v=1639584635",
     size: "OSFM",
     flair: "Best Seller",
     category: "mens-watches",
     photos: [
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwe28cd745/products/A346-001-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw6857d058/products/A346-001-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw7bb5056a/products/A346-001-view5.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw4aff55bb/products/A346-001-life_1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw2500e188/products/A346-001-seeiton.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A346-001-view2.png?v=1639585265",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A346-001-view3.png?v=1639585807",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A346-001-view5.png?v=1639586452",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A346-001-life_1.png?v=1639587111",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A346-001-seeiton.png?v=1639587426",
     ],
   },
   Smoke: {
@@ -139,16 +139,16 @@ const products = {
     warranty:
       "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
     image:
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw7c0ee826/products/A1320-001-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1320-001-view1.png?v=1639584605",
     size: "OSFM",
     flair: "New",
     category: "mens-watches",
     photos: [
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw771a166d/products/A1320-001-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw8dd52573/products/A1320-001-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw67fe06b2/products/A1320-001-view4.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwdd9c5da4/products/A1320-001-life_1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwfec6b751/products/A1320-001-seeiton.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1320-001-view2.png?v=1639585235",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1320-001-view3.png?v=1639585781",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1320-001-view4.png?v=1639586138",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1320-001-life_1_600x.png?v=1639587086",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1320-001-seeiton.png?v=1639587407",
     ],
   },
   Patrol: {
@@ -177,16 +177,16 @@ const products = {
     warranty:
       "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
     image:
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwef9852a6/products/A1243-595-view1.jpg?sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1242-1041-view1.png?v=1639584545",
     size: "OSFM",
     flair: "New",
     category: "mens-watches",
     photos: [
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw79b847c1/products/A1243-595-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw38336b4d/products/A1243-595-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw3c6fce13/products/A1243-595-view4.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwe1c97a98/products/A1243-595-life_1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw0057fd34/products/A1243-595-seeiton.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1242-1041-view2.png?v=1639585172",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1242-1041-view3.png?v=1639585719",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1242-1041-view4.png?v=1639586082",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1242-1041-life_1.png?v=1639587032",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1242-1041-seeiton.png?v=1639587358",
     ],
   },
   //Women's Watches
@@ -216,16 +216,16 @@ const products = {
     warranty:
       "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
     image:
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw2683c663/products/A1090-502-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1090-502-view1.png?v=1639584478",
     size: "OSFM",
     flair: "Personalize",
     category: "womens-watches",
     photos: [
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwee6ebeda/products/A1090-502-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw15749edf/products/A1090-502-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw7c0e5feb/products/A1090-502-view5.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw0ae28126/products/A1090-502-life_1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwa713072a/products/A1090-502-seeiton.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1090-502-view2.png?v=1639585106",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1090-502-view3.png?v=1639585655",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1090-502-view5.png?v=1639586376",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1090-502-life_1.png?v=1639586975",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1090-502-seeiton.png?v=1639587307",
     ],
   },
   Kingston: {
@@ -254,16 +254,16 @@ const products = {
     warranty:
       "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
     image:
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwd26c1405/products/A099-3005-view1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A099-1045-view1.png?v=1639584434",
     size: "OSFM",
     flair: "Personalize",
     category: "womens-watches",
     photos: [
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw429dfc52/products/A099-3005-view2.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw8a92ba1b/products/A099-3005-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw37b448f7/products/A099-3005-view5.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw6dadaf0d/products/A099-3005-life_1.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw76154c5e/products/A099-3005-seeiton.jpg?sw=556&sh=680&sm=fit&sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A099-1045-view2.png?v=1639585063",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A099-1045-view3.png?v=1639585612",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A099-1045-view5.png?v=1639586347",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A099-1045-life_1.png?v=1639586933",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A099-1045-seeiton.png?v=1639587273",
     ],
   },
   Acetic: {
@@ -291,16 +291,16 @@ const products = {
     warranty:
       "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
     image:
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw40cf4eee/products/A327-2882-view1.jpg?sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A327-2882-view1.png?v=1639584629",
     size: "OSFM",
     flair: "New",
     category: "womens-watches",
     photos: [
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw88384374/products/A327-2882-view2.jpg?sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw8a92ba1b/products/A099-3005-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw4806d07d/products/A327-2882-view4.jpg?sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwcbd1cc5d/products/A327-2882-life_1.jpg?sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw3e5e9321/products/A327-2882-seeiton.jpg?sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A327-2882-view2.png?v=1639585259",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A327-2882-view3.png?v=1639585802",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A327-2882-view4.png?v=1639586154",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A327-2882-life_1.png?v=1639587107",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A327-2882-seeiton.png?v=1639587422",
     ],
   },
   //Bags
@@ -329,16 +329,16 @@ const products = {
     warranty:
       "Nixon offers a limited warranty of defects in materials and workmanship for a period of two (2) years after original purchase from nixon.com or an authorized Nixon dealer. This means that if the materials in your watch aren't right or if the watch isn't put together correctly, we'll repair or replace it, at our option. But, this doesn't mean you can abuse your watch and expect us to fix it for free. We don't cover normal wear and tear or batteries*, crystal, watch case, strap, bracelet, loss or theft. You will void your warranty if you open your case back, push the buttons underwater, or forget to screw down or push in the crown and expose your watch to moisture. Proof of purchase is required for all warranty claims and service requests, so hold onto your receipt. Nixon will not accept a warranty claim or repair request if a watch has evidence of excessive wear or misuse.",
     image:
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw40cf4eee/products/A327-2882-view1.jpg?sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/C3024-3440-view1.png?v=1639584841",
     size: "OSFM",
     flair: null,
     category: "bags",
     photos: [
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw88384374/products/A327-2882-view2.jpg?sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw8a92ba1b/products/A099-3005-view3.jpg?sw=556&sh=680&sm=fit&sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw4806d07d/products/A327-2882-view4.jpg?sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dwcbd1cc5d/products/A327-2882-life_1.jpg?sfrm=png",
-      "https://www.nixon.com/dw/image/v2/AAYF_PRD/on/demandware.static/-/Sites-masterCatalog_Nixon/default/dw3e5e9321/products/A327-2882-seeiton.jpg?sfrm=png",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/C3024-3440-view2.png?v=1639585434",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/C3024-3440-view3.png?v=1639585917",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/C3024-3440-view4.png?v=1639586220",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/C3024-3440-view5.png?v=1639586531",
+      "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/C3024-3440-seeiton.png?v=1639587485",
     ],
   },
   //Headwear

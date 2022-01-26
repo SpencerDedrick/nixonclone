@@ -13,7 +13,7 @@ const HomeStyled = styled.div`
   /* HOME HERO STYLES */
   .home__hero-container {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url(https://www.nixon.com/on/demandware.static/-/Library-Sites-Nixon/default/dw4b6121b0/21-2/after-xmas-ool/After_Christmas_Sale_Tablet_768_Week1.jpg);
+      url(https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
     background-position: center;
     background-size: cover;
     height: 75vh;
@@ -23,7 +23,7 @@ const HomeStyled = styled.div`
   @media only screen and (min-width: 640px) {
     .home__hero-container {
       background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url(https://www.nixon.com/on/demandware.static/-/Library-Sites-Nixon/default/dw3980fa44/21-2/after-xmas-ool/After_Christmas_Sale_Desktop_1440_Week1.jpg);
+        url(https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
       background-position: center;
       background-size: cover;
     }
