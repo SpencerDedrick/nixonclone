@@ -9,7 +9,6 @@ If you do happen to peek at the code I would greatly appreciate any feedback!
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -30,10 +29,6 @@ I am currently looking for work as a full-time front-end developer please feel f
 
 Best,
 Spencer Dedrick
-
-### Screenshot
-
-![](public\images\eCommerce.png)
 
 ### Links
 
