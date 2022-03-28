@@ -7,7 +7,7 @@ import { nanoid } from "@reduxjs/toolkit";
 
 const ShopPageBannerStyled = styled.div`
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(https://www.nixon.com/on/demandware.static/-/Library-Sites-Nixon/default/dw3980fa44/21-2/after-xmas-ool/After_Christmas_Sale_Desktop_1440_Week1.jpg);
+    url(https://images.unsplash.com/photo-1517699418036-fb5d179fef0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80);
   background-position: center;
   background-size: cover;
   height: 40vh;
