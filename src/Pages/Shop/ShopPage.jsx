@@ -43,7 +43,7 @@ function ShopPage(props) {
           Home
         </Link>
         <FontAwesomeIcon className="text-xs" icon={faChevronRight} />
-        <Link className="px-2 text-gray-500 text-xs" to="watches">
+        <Link className="px-2  text-xs font-medium" to="watches">
           Watches
         </Link>
       </div>
