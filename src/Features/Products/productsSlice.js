@@ -1,32 +1,11 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
+import products from "../../Constants/Products";
 
-export const fetchProducts = createAsyncThunk(
-  "products/fetchProducts",
-  async () => {
-    return fetch("https://sd-watch-shop-api.herokuapp.com/watches").then(
-      (response) => response.json()
-    );
-  }
-);
+const initialState = { ...products };
 
 const productsSlice = createSlice({
   name: "products",
-  initialState: {
-    value: [],
-    status: null,
-  },
-  extraReducers: {
-    [fetchProducts.pending]: (state, action) => {
-      state.status = "loading";
-    },
-    [fetchProducts.fulfilled]: (state, { payload }) => {
-      state.value = payload;
-      state.status = "success";
-    },
-    [fetchProducts.rejected]: (state, action) => {
-      state.status = "failed";
-    },
-  },
+  initialState,
 });
 
 export default productsSlice.reducer;

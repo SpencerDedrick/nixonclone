@@ -30,6 +30,7 @@ const products = {
     size: "OSFM",
     flair: "Best Seller",
     category: "mens-watches",
+    quantity: 0,
     photos: [
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A083-502-view2.png?v=1639585058",
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A083-502-view3.png?v=1639585608",
@@ -68,6 +69,7 @@ const products = {
     size: "OSFM",
     flair: "Best Seller",
     category: "mens-watches",
+    quantity: 0,
     photos: [
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1180-867-view2.png?v=1639585138",
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1180-867-view3.png?v=1639585687",
@@ -105,6 +107,7 @@ const products = {
     size: "OSFM",
     flair: "Best Seller",
     category: "mens-watches",
+    quantity: 0,
     photos: [
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A346-001-view2.png?v=1639585265",
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A346-001-view3.png?v=1639585807",
@@ -143,6 +146,7 @@ const products = {
     size: "OSFM",
     flair: "New",
     category: "mens-watches",
+    quantity: 0,
     photos: [
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1320-001-view2.png?v=1639585235",
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1320-001-view3.png?v=1639585781",
@@ -181,6 +185,7 @@ const products = {
     size: "OSFM",
     flair: "New",
     category: "mens-watches",
+    quantity: 0,
     photos: [
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1242-1041-view2.png?v=1639585172",
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1242-1041-view3.png?v=1639585719",
@@ -220,6 +225,7 @@ const products = {
     size: "OSFM",
     flair: "Personalize",
     category: "womens-watches",
+    quantity: 0,
     photos: [
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1090-502-view2.png?v=1639585106",
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A1090-502-view3.png?v=1639585655",
@@ -258,6 +264,7 @@ const products = {
     size: "OSFM",
     flair: "Personalize",
     category: "womens-watches",
+    quantity: 0,
     photos: [
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A099-1045-view2.png?v=1639585063",
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A099-1045-view3.png?v=1639585612",
@@ -295,6 +302,7 @@ const products = {
     size: "OSFM",
     flair: "New",
     category: "womens-watches",
+    quantity: 0,
     photos: [
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A327-2882-view2.png?v=1639585259",
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/A327-2882-view3.png?v=1639585802",
@@ -333,6 +341,7 @@ const products = {
     size: "OSFM",
     flair: null,
     category: "bags",
+    quantity: 0,
     photos: [
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/C3024-3440-view2.png?v=1639585434",
       "https://cdn.shopify.com/s/files/1/0541/0272/0705/products/C3024-3440-view3.png?v=1639585917",

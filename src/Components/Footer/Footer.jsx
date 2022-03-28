@@ -9,6 +9,7 @@ import {
   faInstagramSquare,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { nanoid } from "@reduxjs/toolkit";
 
 //FOOTER CONSTANTS
 const FOOTER_LINKS_1 = {
@@ -238,7 +239,7 @@ const FooterStyled = styled.div`
 
 function FooterNavLinks(props) {
   return (
-    <container className="footer__nav-links-container">
+    <div className="footer__nav-links-container">
       <p className="footer__nav-heading">{props.title}</p>
       <hr />
       <div className="footer__nav-link-container">
@@ -247,6 +248,7 @@ function FooterNavLinks(props) {
             <Link
               className="footer__nav-link"
               to={`/${link.replace(/\s/g, "")}`}
+              key={nanoid()}
             >
               {link}
             </Link>
@@ -254,16 +256,21 @@ function FooterNavLinks(props) {
         })}
         <div></div>
       </div>
-    </container>
+    </div>
   );
 }
 
 function FooterSocialLinks(props) {
   return (
-    <container className={"footer__social-container"}>
+    <div r className={"footer__social-container"}>
       {FOOTER_SOCIAL_LINKS.map((social) => {
         return (
-          <a href={social.link} target="_blank" rel="noopener noreferrer">
+          <a
+            href={social.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={nanoid()}
+          >
             <FontAwesomeIcon
               icon={social.icon}
               className="footer__social-icon"
@@ -271,34 +278,34 @@ function FooterSocialLinks(props) {
           </a>
         );
       })}
-    </container>
+    </div>
   );
 }
 
 function FooterLegalLinks() {
   return (
-    <container className="footer__legal-container">
+    <div className="footer__legal-container">
       {FOOTER_LEGAL_LINKS.map((legal) => {
         if (legal !== FOOTER_LEGAL_LINKS[FOOTER_LEGAL_LINKS.length - 1]) {
           return (
-            <>
+            <div key={nanoid()}>
               <a href={legal.link} className="footer__legal-link">
                 {legal.text}
               </a>
               <span>|</span>
-            </>
+            </div>
           );
         } else {
           return (
-            <>
+            <div key={nanoid()}>
               <a href={legal.link} className="footer__legal-link">
                 {legal.text}
               </a>
-            </>
+            </div>
           );
         }
       })}
-    </container>
+    </div>
   );
 }
 

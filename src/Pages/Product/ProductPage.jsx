@@ -14,6 +14,7 @@ import {
 import { Link } from "react-router-dom";
 import HomeProductSlider from "../Home/HomeProductSlider";
 import { AddToCartButton } from "../../Features/Cart/AddToCartButton";
+import { nanoid } from "@reduxjs/toolkit";
 
 let Panel = Collapse.Panel;
 
@@ -65,7 +66,6 @@ function ProductPageBreadCrumbs(props) {
 
 function ProductPageFeatures(props) {
   let { product } = props;
-  console.log(`this is the ${product}`);
   return (
     <div className="bg-white">
       <hr className="py-5 md:hidden" />
@@ -199,11 +199,7 @@ function ProductPageCollapse(props) {
 }
 
 function ProductPageDetailsMobile(props) {
-  let { product, addToCart } = props;
-
-  function handleClick(product) {
-    addToCart(product);
-  }
+  let { product } = props;
 
   return (
     <div className="product-page__details-container md:hidden">
@@ -217,7 +213,7 @@ function ProductPageDetailsMobile(props) {
         {product.name} {product.type}
       </p>
       <p className="py-1 text-sm text-gray-500 font-medium">{product.color}</p>
-      <StarRatingComponent editing={false} />
+      <StarRatingComponent editing={false} name={`${product.name} rating`} />
       <p className="font-medium text-xs py-2">
         ${product.price}.00{" "}
         <span className="font-medium text-gray-500">
@@ -240,6 +236,7 @@ function ProductPageDetailsMobile(props) {
               src={product.photos[index]}
               alt={product.name}
               className="w-1/5 px-2"
+              key={nanoid()}
             />
           );
         })}
@@ -287,7 +284,7 @@ function ProductPageDetailsDesktop(props) {
           <p className="py-1 text-sm text-gray-500 font-medium">
             {product.color}
           </p>
-          <StarRatingComponent editing={false} />
+          <StarRatingComponent editing={false} name={`${product.name}`} />
           <p className="desktop-detail-text text-sm tracking-wide leading-relaxed py-3">
             {product.description}
           </p>
@@ -306,6 +303,7 @@ function ProductPageDetailsDesktop(props) {
                   src={product.photos[index]}
                   alt={product.name}
                   className="w-20 px-2"
+                  key={nanoid()}
                 />
               );
             })}

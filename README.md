@@ -107,6 +107,11 @@ Overall this project has been a pleasant experience implementing all that I've l
 
 ### Continued development
 
+Update as of 3/27/2022
+I was finally able to spend some mroe time with the project! I finished implementing the cart functionality. The code isn't totally optimized yet, but it works!
+
+My next goal is to finish the search feature and then start refactoring and cleaning up the code.
+
 This is my most ambitious project yet. I will update as needed, but I'm really hoping this will be the project that propels me into a development position.
 
 ### Useful resources

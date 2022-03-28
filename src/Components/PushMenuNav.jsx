@@ -1,5 +1,6 @@
 import React from "react";
 import PushMenu from "react-burger-menu/lib/menus/push";
+import { nanoid } from "@reduxjs/toolkit";
 
 import HeaderMenuItem from "./HeaderMenuItem";
 import styled from "styled-components";
@@ -137,6 +138,7 @@ function PushMenuNav(props) {
               toggleMenu={props.toggleMenu}
               text={item.text}
               link={item.link}
+              key={nanoid()}
             />
           );
         })}

@@ -1,14 +1,6 @@
-import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { fetchProducts } from "./productsSlice";
+import React from "react";
 
 const Products = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    console.log(dispatch(fetchProducts()));
-  }, [dispatch]);
-
   return <div></div>;
 };
 

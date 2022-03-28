@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useSelector } from "react-redux";
+import { nanoid } from "@reduxjs/toolkit";
 
 const DesktopNavStyled = styled.div`
 display: none;
@@ -228,12 +229,9 @@ const SearchBar = () => {
   };
 
   useEffect(() => {
-    console.log(search);
-
     if (search === "") {
       setClearButtonActive(false);
     }
-    console.log(clearButtonActive);
   }, [search, clearButtonActive]);
 
   return (
@@ -274,13 +272,27 @@ const LogoContainer = () => {
 const AccountMenu = (props) => {
   const cart = useSelector((state) => state.cart);
 
+  let calcCart = () => {
+    let cartQ = 0;
+    cart.forEach((item) => {
+      if (item.quantity <= 5) {
+        cartQ += 1 * item.quantity;
+      }
+    });
+    return cartQ;
+  };
+
   return (
     <div className="nav__top__item nav__account-menu">
       <Link to="/" className="nav__account-menu__country">
         EN
       </Link>
-      <Link className="nav__account-menu__item">Order Status</Link>
-      <Link className="nav__account-menu__item">Find a Store</Link>
+      <Link to="/" className="nav__account-menu__item">
+        Order Status
+      </Link>
+      <Link to="/" className="nav__account-menu__item">
+        Find a Store
+      </Link>
       <p className="nav__account-menu__item">
         Sign In
         <FontAwesomeIcon
@@ -289,7 +301,7 @@ const AccountMenu = (props) => {
         />
       </p>
       <Link to="/cart" className="nav__account-menu__cart">
-        <p className="nav__account-menu__cart-qty">{cart.length}</p>
+        <p className="nav__account-menu__cart-qty">{calcCart()}</p>
         <FontAwesomeIcon icon={faShoppingCart} />
       </Link>
     </div>
@@ -304,11 +316,6 @@ const NavLinks = () => {
     Trending: [],
   });
 
-  useEffect(() => {
-    console.log(open);
-    console.log(Object.keys(navLinkItems)[1]);
-  }, [open, navLinkItems]);
-
   return (
     <div className="nav__nav-links" onMouseLeave={() => setOpen(false)}>
       {navMenuItems.map((item) => (
@@ -316,6 +323,7 @@ const NavLinks = () => {
           item={item}
           setOpen={setOpen}
           setNavLinkItems={setNavLinkItems}
+          key={nanoid()}
         />
       ))}
       {open ? (
@@ -333,10 +341,6 @@ const NavLink = (props) => {
       setOpen(true);
       setNavLinkItems(items);
     }
-  };
-
-  const onMouseLeave = () => {
-    setOpen(false);
   };
 
   return (
@@ -371,6 +375,7 @@ const NavDropDown = (props) => {
               to={`/sale`}
               className="nav__dropdown__item__link"
               onClick={() => setOpen(false)}
+              key={nanoid()}
             >
               {link}
             </Link>

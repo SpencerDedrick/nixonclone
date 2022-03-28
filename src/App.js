@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { Route, Switch, HashRouter } from "react-router-dom";
 import Home from "./Pages/Home/Home";
@@ -13,6 +13,7 @@ import ShopPage from "./Pages/Shop/ShopPage";
 import Products from "./Features/Products/products";
 
 import ScrollToTop from "./Components/ScrollToTop";
+import { nanoid } from "@reduxjs/toolkit";
 
 function App() {
   /* const api_url = "https://sd-watch-shop-api.herokuapp.com/watches";
@@ -32,7 +33,9 @@ function App() {
   const [cartState, setCartState] = useState([]);
 
   function addToCart(product) {
-    setCartState((cartState) => [...cartState, product]);
+    if (!cartState.includes(product)) {
+      setCartState((cartState) => [...cartState, product]);
+    }
   }
 
   function removeFromCart(product) {
@@ -49,10 +52,6 @@ function App() {
       (product) => products[product].type === "Watch"
     );
   }
-
-  useEffect(() => {
-    console.log(cartState);
-  }, [cartState]);
 
   /*   const removeFromCart = (product) => {
     setCartState(cartState.filter((item) => item.id !== product.id));
@@ -94,7 +93,7 @@ function App() {
             </Route>
             {Object.keys(products).map((product) => {
               return (
-                <Route path={`/${products[product].name}`}>
+                <Route path={`/${products[product].name}`} key={nanoid()}>
                   <ProductPage
                     product={products[product]}
                     addToCart={addToCart}
@@ -104,10 +103,11 @@ function App() {
             })}
             {productCategories.map((category) => {
               return (
-                <Route path={`/${category}`}>
+                <Route path={`/${category}`} key={nanoid()}>
                   <ShopPage
                     products={products}
                     filteredProducts={filterProducts(category)}
+                    key={nanoid()}
                   />
                 </Route>
               );

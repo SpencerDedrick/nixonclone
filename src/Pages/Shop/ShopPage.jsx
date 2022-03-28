@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import StarRatingComponent from "react-star-rating-component";
 import HomeProductSlider from "../Home/HomeProductSlider";
 import styled from "styled-components";
+import { nanoid } from "@reduxjs/toolkit";
 
 const ShopPageBannerStyled = styled.div`
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -38,7 +39,7 @@ function ShopPage(props) {
       <div className="grid grid-cols-2 md:grid-cols-3">
         {filteredProducts.map((product) => {
           return (
-            <Link to={`/${products[product].name}`}>
+            <Link to={`/${products[product].name}`} key={nanoid()}>
               <div className="py-5">
                 <img
                   className="w-44 m-auto py-3"
@@ -70,7 +71,10 @@ function ShopPage(props) {
                     {products[product].name}
                   </h1>
                   <p>${products[product].price}.00</p>
-                  <StarRatingComponent editing={false} />
+                  <StarRatingComponent
+                    editing={false}
+                    name={`${product.name}`}
+                  />
                 </div>
               </div>
             </Link>

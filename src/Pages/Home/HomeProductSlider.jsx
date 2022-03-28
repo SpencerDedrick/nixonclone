@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
+import { nanoid } from "@reduxjs/toolkit";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -178,7 +179,10 @@ export default class CenterMode extends Component {
           <Slider {...settings}>
             {products.map((product) => {
               return (
-                <ProductSliderStyled className="home__slider-container lg:h-96 ">
+                <ProductSliderStyled
+                  className="home__slider-container lg:h-96 "
+                  key={nanoid()}
+                >
                   <div className="  lg:grid lg:place-content-center lg:overflow-hidden">
                     <Link to={`/${product.name}`}>
                       <img
