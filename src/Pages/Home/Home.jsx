@@ -216,7 +216,7 @@ function HomeThreePanel() {
       <div className=" hidden sm:block sm:w-20"></div>
 
       <div className="home__square-container my-2">
-        <Link to="headear">
+        <Link to="watches">
           <div className="panel-3">
             <div className="absolute bottom-5 left-0 right-0">
               <p className="text-white text-center text-lg font-semibold">
@@ -224,7 +224,7 @@ function HomeThreePanel() {
               </p>
               <div className="flex justify-around m-auto">
                 <Link
-                  to="headwear"
+                  to="watches"
                   className="underline text-white text-sm font-medium"
                 >
                   Shop Now
@@ -250,7 +250,7 @@ function HomeTwoPanel() {
               </p>
               <div className="flex justify-around w-56 m-auto">
                 <Link
-                  to="mens"
+                  to="mens-watches"
                   className="underline text-white text-sm font-medium"
                 >
                   Shop Men's
@@ -297,9 +297,15 @@ function HomeInstaBar() {
         #<Redacted />
       </p>
       <p className="my-5">
-        Get featured by showing us how you #<Redacted /> on Instagram
+        Get featured by showing us how you #<Redacted /> on Social Media
       </p>
-      <Button buttonType="black">Shop Instagram</Button>
+      <a
+        href="https://spencerdedrick.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button buttonType="black">Learn More</Button>
+      </a>
     </div>
   );
 }
@@ -334,7 +340,13 @@ function HomeSubBar() {
       <p className="home__sub-bar-text text-white text-xl md:text-4xl font-bold mb-5 ">
         Become a <Redacted /> Insider
       </p>
-      <Button buttonType="white">Get 10% Off</Button>
+      <a
+        href="https://spencerdedrick.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button buttonType="white">Get 10% Off</Button>
+      </a>
     </div>
   );
 }

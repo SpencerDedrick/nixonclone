@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import StarRatingComponent from "react-star-rating-component";
 import HomeProductSlider from "../Home/HomeProductSlider";
 import styled from "styled-components";
-import { nanoid } from "@reduxjs/toolkit";
+import { createAction, nanoid } from "@reduxjs/toolkit";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ShopPageBannerStyled = styled.div`
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -36,6 +38,47 @@ function ShopPage(props) {
       <ShopPageBannerStyled>
         <ShopPageBanner />
       </ShopPageBannerStyled>
+      <div className="p-3 mx-5 md:mx-10 md:bg-white">
+        <Link className="pr-2 text-gray-500 text-xs" to="/">
+          Home
+        </Link>
+        <FontAwesomeIcon className="text-xs" icon={faChevronRight} />
+        <Link className="px-2 text-gray-500 text-xs" to="watches">
+          Watches
+        </Link>
+      </div>
+      <span className="font-semibold p-3 mx-5 md:mx-10 text-2xl">
+        Watches for all styles
+      </span>
+      <div className="p-3 mx-5 md:mx-10 w-auto">
+        <div className="overflow-x-auto  flex flex-row ">
+          <button className="rounded-sm inlineblock border-2 px-4 py-2 font-bold border-slate-300 mr-2 text-sm">
+            Type
+          </button>
+          <button className="rounded-sm inlineblock whitespace-nowrap border-2 px-4 py-2 font-bold border-slate-300 mx-2 text-sm">
+            Price
+          </button>
+          <button className="rounded-sm border-2 px-4 whitespace-nowrap py-2 font-bold border-slate-300 mx-2 text-sm">
+            Color
+          </button>
+          <button className="rounded-sm border-2 whitespace-nowrap px-4 py-2 font-bold border-slate-300 mx-2 text-sm">
+            Band Material
+          </button>
+          <button className="rounded-sm border-2 whitespace-nowrap px-4 py-2 font-bold border-slate-300 mx-2 text-sm">
+            Water Rating
+          </button>
+          <button className="rounded-sm border-2 whitespace-nowrap px-4 py-2 font-bold border-slate-300 mx-2 text-sm">
+            Watch size
+          </button>
+          <button className="rounded-sm border-2 whitespace-nowrap px-4 py-2 font-bold border-slate-300 mx-2 text-sm align-self-end">
+            Sort
+          </button>
+          <span className="mx-10 text-gray-400 self-center">
+            {filteredProducts.length} Items
+          </span>
+        </div>
+      </div>
+      <hr className="md:mx-10 mx-5 p-3" />
       <div className="grid grid-cols-2 md:grid-cols-3">
         {filteredProducts.map((product) => {
           return (

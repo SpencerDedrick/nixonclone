@@ -48,7 +48,7 @@ const StyledProductPage = styled.div`
 function ProductPageBreadCrumbs(props) {
   let { product } = props;
   return (
-    <div className="p-3 md:bg-white">
+    <div className="p-3 md:bg-white md:px-10">
       <Link className="pr-2 text-gray-500 text-xs" to="/">
         Home
       </Link>
@@ -311,9 +311,9 @@ function ProductPageDetailsDesktop(props) {
           <p className="font-medium text-xl text-center">
             ${product.price}.00{" "}
           </p>
-          <p className="font-medium text-xs py-2 ">
-            <span className="font-medium text-gray-500">
-              or 4 installments of $ {product.price / 4} with
+          <p className="font-medium text-xs py-2  text-center">
+            <span className="font-medium text-gray-500 ">
+              or 4 installments of $ {product.price / 4} with{" "}
             </span>
             {/* make info icon a popup with modal */}
             <span className="font-bold">
