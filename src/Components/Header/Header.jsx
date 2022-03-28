@@ -112,6 +112,15 @@ function HeaderMenuButton(props) {
 // HEADER CART ICON
 export function HeaderCart(props) {
   const cart = useSelector((state) => state.cart);
+  let calcCart = () => {
+    let cartQ = 0;
+    cart.forEach((item) => {
+      if (item.quantity <= 5) {
+        cartQ += 1 * item.quantity;
+      }
+    });
+    return cartQ;
+  };
   return (
     // props.props????? There must be a better way to handle this
     <Link
@@ -119,7 +128,7 @@ export function HeaderCart(props) {
       onClick={() => handleOffMenuClick(props.props)}
       className="flex"
     >
-      <p className="px-2 font-bold text-lg">{cart.length}</p>
+      <p className="px-2 font-bold text-lg">{calcCart()}</p>
       <FontAwesomeIcon icon={faShoppingCart} className="text-2xl" />
     </Link>
   );
