@@ -85,9 +85,7 @@ function App() {
               <Home />
               <Products />
             </Route>
-            <Route path="/AboutUs">
-              <h1>About Us</h1>
-            </Route>
+
             <Route path="/Cart">
               <Cart cartState={cartState} removeFromCart={removeFromCart} />
             </Route>

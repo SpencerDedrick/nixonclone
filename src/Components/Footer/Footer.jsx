@@ -36,33 +36,36 @@ const FOOTER_LINKS_3 = {
 const FOOTER_SOCIAL_LINKS = [
   {
     icon: faInstagramSquare,
-    link: "https://www.instagram.com/",
+    link: "https://www.spencerdedrick.com/",
   },
   {
     icon: faPinterest,
-    link: "https://www.pinterest.com/",
+    link: "https://www.spencerdedrick.com/",
   },
   {
     icon: faFacebookF,
-    link: "https://www.facebook.com/",
+    link: "https://www.spencerdedrick.com/",
   },
   {
     icon: faYoutube,
-    link: "https://www.youtube.com/",
+    link: "https://www.spencerdedrick.com/",
   },
   {
     icon: faTwitter,
-    link: "https://twitter.com/",
+    link: "https://www.spencerdedrick.com/",
   },
 ];
 
 const FOOTER_LEGAL_LINKS = [
-  { text: "Privacy Policy", link: "#" },
-  { text: "Terms and Conditions", link: "#" },
-  { text: "Store/Dealer Locator", link: "#" },
-  { text: "Unauthorized Dealers Alert", link: "#" },
-  { text: "Social Responsibility", link: "#" },
-  { text: "Accessibility", link: "#" },
+  { text: "Privacy Policy", link: "https://www.spencerdedrick.com/" },
+  { text: "Terms and Conditions", link: "https://www.spencerdedrick.com/" },
+  { text: "Store/Dealer Locator", link: "https://www.spencerdedrick.com/" },
+  {
+    text: "Unauthorized Dealers Alert",
+    link: "https://www.spencerdedrick.com/",
+  },
+  { text: "Social Responsibility", link: "https://www.spencerdedrick.com/" },
+  { text: "Accessibility", link: "https://www.spencerdedrick.com/" },
 ];
 
 //FOOTER STYLES
@@ -245,9 +248,15 @@ function FooterNavLinks(props) {
       <div className="footer__nav-link-container">
         {props.links.map((link) => {
           return (
-            <Link className="footer__nav-link" to={`/`} key={nanoid()}>
+            <a
+              href="https://www.spencerdedrick.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__nav-link"
+              key={nanoid()}
+            >
               {link}
-            </Link>
+            </a>
           );
         })}
         <div></div>
@@ -258,11 +267,11 @@ function FooterNavLinks(props) {
 
 function FooterSocialLinks(props) {
   return (
-    <div r className={"footer__social-container"}>
+    <div className={"footer__social-container"}>
       {FOOTER_SOCIAL_LINKS.map((social) => {
         return (
           <a
-            href={social.link}
+            href="https://www.spencerdedrick.com/"
             target="_blank"
             rel="noopener noreferrer"
             key={nanoid()}
@@ -285,7 +294,12 @@ function FooterLegalLinks() {
         if (legal !== FOOTER_LEGAL_LINKS[FOOTER_LEGAL_LINKS.length - 1]) {
           return (
             <div key={nanoid()}>
-              <a href={legal.link} className="footer__legal-link inline-block">
+              <a
+                href="https://www.spencerdedrick.com/"
+                className="footer__legal-link inline-block"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {legal.text}
               </a>
               <span>|</span>
@@ -294,7 +308,12 @@ function FooterLegalLinks() {
         } else {
           return (
             <div key={nanoid()}>
-              <a href={legal.link} className="footer__legal-link">
+              <a
+                href="https://www.spencerdedrick.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer__legal-link"
+              >
                 {legal.text}
               </a>
             </div>
