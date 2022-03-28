@@ -245,11 +245,7 @@ function FooterNavLinks(props) {
       <div className="footer__nav-link-container">
         {props.links.map((link) => {
           return (
-            <Link
-              className="footer__nav-link"
-              to={`/${link.replace(/\s/g, "")}`}
-              key={nanoid()}
-            >
+            <Link className="footer__nav-link" to={`/`} key={nanoid()}>
               {link}
             </Link>
           );
@@ -284,12 +280,12 @@ function FooterSocialLinks(props) {
 
 function FooterLegalLinks() {
   return (
-    <div className="footer__legal-container">
+    <div className="footer__legal-container m-auto w-full flex flex-wrap">
       {FOOTER_LEGAL_LINKS.map((legal) => {
         if (legal !== FOOTER_LEGAL_LINKS[FOOTER_LEGAL_LINKS.length - 1]) {
           return (
             <div key={nanoid()}>
-              <a href={legal.link} className="footer__legal-link">
+              <a href={legal.link} className="footer__legal-link inline-block">
                 {legal.text}
               </a>
               <span>|</span>

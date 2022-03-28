@@ -287,7 +287,7 @@ const AccountMenu = (props) => {
       <Link to="/" className="nav__account-menu__country">
         EN
       </Link>
-      <Link to="/" className="nav__account-menu__item">
+      <Link to="cart" className="nav__account-menu__item">
         Order Status
       </Link>
       <Link to="/" className="nav__account-menu__item">
@@ -391,28 +391,28 @@ const NavDropDown = (props) => {
         <div className="nav__dropdown__mainlinks">
           <Link
             className="nav__dropdown__mainlink"
-            to="/"
+            to="watches"
             onClick={() => setOpen(false)}
           >
             New Arrivals
           </Link>
           <Link
             className="nav__dropdown__mainlink"
-            to="/"
+            to="watches"
             onClick={() => setOpen(false)}
           >
             Best Sellers
           </Link>
           <Link
             className="nav__dropdown__mainlink"
-            to="/"
+            to="watches"
             onClick={() => setOpen(false)}
           >
             Custom
           </Link>
           <Link
             className="nav__dropdown__mainlink"
-            to="/"
+            to="watches"
             onClick={() => setOpen(false)}
           >
             Shop All
