@@ -206,6 +206,9 @@ display: none;
   }
 
   @media only screen and (min-width: 1280px) {
+    .nav__top {
+      margin: auto;
+    }
     .nav__top__item { 
       max-width: 33.33%;
     }

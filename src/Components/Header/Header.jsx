@@ -13,6 +13,7 @@ const HeaderStyled = styled.div`
   align-items: center;
   padding: 1rem 0.75rem;
   width: 100vw;
+  margin: auto;
 
   @media only screen and (min-width: 1024px) {
     display: none;
